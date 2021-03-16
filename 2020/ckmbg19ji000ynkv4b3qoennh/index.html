@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    Git和Github入门 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Git和Github入门"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Git和Github入门
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckmbg19ji000ynkv4b3qoennh/" class="article-date">
+  <time datetime="2020-12-25T05:21:42.000Z" itemprop="datePublished">2020-12-25</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Git%E5%92%8CGithub%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">Git和Github基础学习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=355715222,2610893624&fm=26&gp=0.jpg" style="width: 200px ;height: 90px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">Git和Github入门</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+Git和Github入门
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>第一阶段单枪匹马干</strong>
+</div>
+
+<p>想要让git对一个目录进行版本控制需要以下步骤</p>
+<ul>
+<li>进入要管理的文件夹</li>
+<li>执行初始化命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git init<br></code></pre></td></tr></table></figure></li>
+<li>管理目录下的文件状态<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git status<br>注：新增的文件和修改过后的文件都是红色<br></code></pre></td></tr></table></figure></li>
+<li>管理指定文件（红变绿）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git add  文件名<br>git add.<br></code></pre></td></tr></table></figure></li>
+<li>个人信息配置：用户名、邮箱【只需配置一次即可】<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --global user.email &quot;you@example.com&quot;<br>git config --global user.name &quot;Your Name&quot;<br></code></pre></td></tr></table></figure></li>
+<li>生成版本<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git commit -m &#39;描述信息&#39;<br></code></pre></td></tr></table></figure></li>
+<li>查看版本记录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git log<br></code></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<div style="text-align: center; color: red">
+    <strong>以下总结：</strong>
+</div>
+
+
+<ol>
+<li><p>进入要管理的目录</p>
+</li>
+<li><p><strong>git init</strong> 初始化，即：让git帮助我们管理当前文件夹</p>
+</li>
+<li><p><strong>git status</strong> 检测当前目录下文件的状态</p>
+</li>
+<li><p><strong>三种状态的变化</strong></p>
+</li>
+</ol>
+<ul>
+<li>红色：新增的文件/修改了原老文件  –&gt; git add 文件名</li>
+<li>绿色：git 已经管理起来 —&gt; git commit -m ‘描述信息’</li>
+<li>生成版本</li>
+</ul>
+<hr>
+<div style="text-align: center; color: red">
+    <strong>git三大区域图解</strong>
+</div>
+
+<img src="/image/gitSummary/01.png">
+
+<hr>
+<div style="text-align: center; color: red">
+    2.2<strong>第二阶段：拓展新功能</strong>
+</div>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git  add .<br>git  commit  -m &#39;短视频&#39;<br></code></pre></td></tr></table></figure>
+
+<div style="text-align: center; color: red">
+    2.3<strong>第三阶段：“约饭事件”</strong>
+</div>
+
+
+<ul>
+<li><p>回滚至之前版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git log   <br>git reset --hard 版本号<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>回滚至之后版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git reflog<br>git reset --hard 版本号<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>git分支</strong>
+</div>
+
+
+<p><strong>商城and紧急bug修复</strong></p>
+<p>命令总结</p>
+<ul>
+<li>查看分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git branch<br></code></pre></td></tr></table></figure></li>
+<li>创建分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git branch 分支名称<br></code></pre></td></tr></table></figure></li>
+<li>切换分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout  分支名称<br></code></pre></td></tr></table></figure></li>
+<li>分支合并（可能产生冲突）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git merge  要合并的分支<br>注意：切换分支再合并<br></code></pre></td></tr></table></figure></li>
+<li>删除分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git branch -d  分支名称<br></code></pre></td></tr></table></figure>
+创建dev分支并且切换到dev分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout -b dev<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</p>
+
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>第五阶段：进军三路屯</strong>
+</div>
+
+<p><strong>在家里上传代码</strong></p>
+<ol>
+<li>给远程仓库起别名<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git remote add origin  远程仓库地址<br></code></pre></td></tr></table></figure></li>
+<li>向远程推送代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git push -u origin 分支名称<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><strong>在公司新电脑上第一次获取代码</strong></p>
+<ol>
+<li>克隆远程仓库代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git clone 远程仓库地址 （内部已经实现 git remote add origin 远程仓库地址）<br></code></pre></td></tr></table></figure></li>
+<li>切换分支<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout  分支<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><strong>在公司进行开发</strong></p>
+<ol>
+<li><p>切换到dev分支进行开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout dev<br></code></pre></td></tr></table></figure></li>
+<li><p>把master分支合并到dev 【仅一次】</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git merge master<br></code></pre></td></tr></table></figure></li>
+<li><p>修改代码</p>
+</li>
+<li><p>提交代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git add<br>git commit -m &#39;xxx&#39;<br>git push origin dev<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><strong>回到家中继续写代码</strong></p>
+<ol>
+<li><p>切换到dev分支进行开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout  dev<br></code></pre></td></tr></table></figure></li>
+<li><p>拉代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git pull origin dev<br></code></pre></td></tr></table></figure></li>
+<li><p>继续开发</p>
+</li>
+<li><p>提交代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git add<br>git commit -m &#39;xxx&#39;<br>git push origin dev<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p><strong>在公司继续开发</strong></p>
+<ol>
+<li><p>切换到dev分支进行开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout  dev<br></code></pre></td></tr></table></figure></li>
+<li><p>拉代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git pull origin dev<br></code></pre></td></tr></table></figure></li>
+<li><p>继续开发</p>
+</li>
+<li><p>提交代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git add<br>git commit -m &#39;xxx&#39;<br>git push origin dev<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<p><strong>开发完毕，要上线</strong></p>
+<ol>
+<li>将dev分支合并到master，进行上线<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout  master<br>git merge dev<br>git push origin master<br></code></pre></td></tr></table></figure></li>
+<li>把dev分支也推送到远程<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git checkout dev<br>git merge master<br>git push origin dev<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<ol start="3">
+<li><mark>git pull origin dev 等同于下面两个命令</mark><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git fetch origin dev<br>git merge origin&#x2F;dev<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>rebase的使用，及注意事项</strong>
+</div>
+
+<p>保持代码提交整洁(变基)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git rebase 分支<br></code></pre></td></tr></table></figure>
+
+<p>记录图形展示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git log --graph --pretty&#x3D;format:&quot;%h %s&quot;<br></code></pre></td></tr></table></figure>
+
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>给开源软件贡献代码</strong>
+</div>
+
+<ol>
+<li><p>fork源码<br>将别人的源码拷贝到我自己的远程仓库</p>
+</li>
+<li><p>在自己仓库进行修改代码</p>
+</li>
+<li><p>给源代码的作者提交 修复bug 的申请(pull request)</p>
+</li>
+</ol>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>配置</strong>
+</div>
+
+
+<p>3.1配置</p>
+<p>项目配置文件:项目<code>/.git/config</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --local user.name&#39;武沛齐&#39;<br>git config --local user.emai7 &quot;wupeiqi@xx.com&quot;<br></code></pre></td></tr></table></figure>
+
+<p>全局配置文件: <code>~/.gitconfig</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --global user.name &quot; wupeiq&#39;<br>git config --global user.name &quot;wupeiqi@xx.com&quot;<br></code></pre></td></tr></table></figure>
+
+<p>系统配置文件:<code>/etc/.gitconfig</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --system user.name &quot;wupeiq&#39;<br>git config --system user.name &quot;wupeiqi@xx.com &quot;<br></code></pre></td></tr></table></figure>
+
+<p>注意:需要有root权限</p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>应用场景∶</strong>
+</div>
+
+<p>应用场景∶</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --1ocal user.name&#39;武沛齐&quot;<br>git config --1ocal user.email &#39;wupeiqi @xx. com &#39;<br><br>git config --local merge.tool bc3<br>git config --1ocal mergetoo1.path &quot; &#x2F;usr&#x2F;loca1&#x2F;bin&#x2F;bcomp&#39;git config --1oca1 mergetoo1.keepBackup false<br><br>git remote add origin地址，默认添加在本地配置文件中(--loca1)<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>免密码登录</strong>
+</div>
+
+<p>免密码登录<br>URL中体现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">原来的地址: https:&#x2F;&#x2F;github.com&#x2F;&#39;wuPeiqi&#x2F;dbhot.git<br>修改的地址:https:&#x2F;&#x2F;用户名:密码@github.com&#x2F;wupeiqi&#x2F;dbhot.git<br><br>git remote add origin https:&#x2F;&#x2F;用户名:密码@github.com&#x2F;wuPeiqi&#x2F;dbhot.git<br>git push origin master<br></code></pre></td></tr></table></figure>
+
+<p>SSH实现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">1．生成公钥和私钥&#96;(默认放在~&#x2F;.ssh目录下,id_rsa. pub公钥、id_rsa私钥)&#96;<br>ssh-keygen<br>2．拷贝公钥的内容,并设置到github中。<br>3．在git本地中配置ssh地址<br>git remote add origin git@github.com : wuPeiqi&#x2F;dbhot.git<br><br>4.以后使用<br>git push origin master<br></code></pre></td></tr></table></figure>
+<p>git自动管理凭证</p>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>git忽略文件</strong>
+</div>
+
+<p>3.3 git忽略文件<br>让Git不再管理当前目录下的某些文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">*, h<br>!a.hfiles&#x2F;<br>*.py[clal d]<br></code></pre></td></tr></table></figure>
+<p>更多参考:<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://github.com/github/gitignore</a></p>
+<p>3.4任务管理相关<br>issues，文档以及任务管理。<br>wiki，项目文档。</p>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong></strong>
+</div>
+
+
+
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong></strong>
+</div>
+
+
+
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>快速解决冲突</strong>
+</div>
+
+<ol>
+<li><p>安装beyond compare</p>
+</li>
+<li><p>在git中配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git config --local merge.tool bc3<br>git config --local merge.tool.path &#39;D:\beyondconpare\Beyond Compare 4&#39;<br>git config --local merge.tool.keepBackup false<br></code></pre></td></tr></table></figure></li>
+<li><p>应用beyond compare 解决冲突</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git mergetool<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>总结</strong>
+</div>
+
+<ol>
+<li><p>添加远程连接(别名)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git remote add origin 地址<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>推动代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git push origin dev<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>下载代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git clone 地址<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>拉取代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">git pull origin dev<br>等价于<br>git fetch origin dev<br>git merge origin&#x2F;dev<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+</ol>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS的四种引入方式</strong>
+</div>
+
+
+
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS的四种引入方式</strong>
+</div>
+
+
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS的四种引入方式</strong>
+</div>
+
+
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>记录git报错 error: failed to push some refs to 'git@github.com:xxxxxx/xxxxx.git' 的解决方案</strong>
+</div>
+
+<p>出现的错误<br>在使用git运行push命令到远程仓库时，发生错误，错误信息如下：</p>
+<img src="/image/gitError/01.png">
+
+<p>解决方案<br>首先运行拉取命令<br>把README.md文件克隆到本地库。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git pull --rebase origin master<br></code></pre></td></tr></table></figure>
+
+<p>最后再执行推送命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">git push -u origin master<br></code></pre></td></tr></table></figure>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckmbg19ji000ynkv4b3qoennh/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git%E5%92%8CGithub%E5%85%A5%E9%97%A8/" rel="tag">Git和Github入门</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckmbg19jm0010nkv4802ehe3e/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            HTML5andCSS3总复习
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckmbg19pc005pnkv4eea1ex6t/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">VUE总复习</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>

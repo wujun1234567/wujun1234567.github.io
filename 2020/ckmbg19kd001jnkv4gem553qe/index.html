@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    JS基础复习 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-JS基础复习"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  JS基础复习
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckmbg19kd001jnkv4gem553qe/" class="article-date">
+  <time datetime="2020-11-12T15:19:08.000Z" itemprop="datePublished">2020-11-12</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">35 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3966734296,1458622362&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">之前学习的JS进行复习</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+将结合红宝书进行复习JS，加强JS学习
+<br>
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>JS变量命名规范:</strong><br>1.不能数字开头  18add<br>2.不能是关键字  var  for<br>3.变量命名必须有意义  age<br>4.遵循驼峰命名法   addFind</p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>交换两个变量的值:</strong><br>var temp;<br>var apple1 = 青苹果;<br>var apple2 = 红苹果;<br>temp = apple1;<br>apple1 = apple2;<br>apple2 = temp; </p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>数字型进制:</strong><br>在JS里面 var num = 010<br>输出为 8 表示8进制<br>var num2 = 0xa<br>输出为 10 表示16进制</p>
+<p>最大值： Number.MAX_VALUE<br>最小值： Number.MIN_VALUE<br>无穷大： Number.MAX_VALUE * 2<br>无穷小： -Number.MAX_VALUE * 2<br>非数字型：NAN</p>
+<p>isNAN() 判断是不是数字类型的。<br>是数字类型返回flase,不是的话返回true<br>console.log(isNAN(12))  // flase<br>console.log(isNAN(‘nihao’))  // true</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>字符串类型:</strong><br>转义符：<br>\n : 换行符<br>\ \ : 斜杠 \<br>&#39; : ‘ 单引号<br>&quot; : “ 双引号<br>\t : tab 缩进<br>\b : 空格 ，b是blank 的意思 </p>
+<p><strong>字符串拼接:</strong><br><strong>只要是有字符串参与的拼接都是字符串。</strong><br>console.log(‘12’+12) // “1212”</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>布尔型:</strong><br>true和false在运算中被看做 1 和 0 参与运算。</p>
+<p><strong>undefined:</strong><br>如果一个变量声明未赋值 就是undefined 未定义数据类型。<br>var str<br>console.log(str)  // 输出 undefined<br>console.log(undefined + 1) //输出 NAN</p>
+<p><strong>null: 空值</strong><br>console.log(null + 1)  // 输出 1  与undefined有区别</p>
+<p><strong>检测数据类型 typeof </strong><br>var num = 1 ;<br>console.log( typeof  num)  // 输出的是一个number 数字类型</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>数据类型转换:</strong><br>1.把数字转换成字符串类型<br>toString 方法<br>var num = 10 ；<br>var str = num.toString();<br>console.log(str)</p>
+<p>String() 方法<br>var num = 10 ；<br>console.log(String(num));</p>
+<p>字符串拼接的方法<br>var num = 10 ；<br>console.log( num + ‘’);</p>
+<p>2.把字符串转换为数字类型<br>parseInt(变量) 的转换为整数的方法</p>
+<p>var str = “18”<br>console.log(parseInt(str));  //输出 数字类型 18<br>console.log(parseInt(‘3.14’));  //输出 数字类型 3<br>console.log(parseInt(‘3.99’));  //输出 数字类型 3<br>console.log(parseInt(‘120px’));  //输出 数字类型 120<br>console.log(parseInt(‘rem120px’));  //输出 数字类型 NAN</p>
+<p>parseFloat(变量) 的转换为小数的方法</p>
+<p>console.log(parseInt(‘3.14’));  //输出 数字类型 3.14<br>console.log(parseInt(‘3.99’));  //输出 数字类型 3.99<br>console.log(parseInt(‘120px’));  //输出 数字类型 120<br>console.log(parseInt(‘rem120px’));  //输出 数字类型 NAN</p>
+<p>Number(变量)<br>var str = “18”<br>console.log(Number(str));<br>console.log(Number(‘12’));</p>
+<p>算术运算 - * /  隐式转换<br>console.log(‘12’ - 0 ) // 12<br>console.log(‘12’ - ‘0’ ) // 12<br>console.log(‘12’ - ‘12’ ) // 0</p>
+<p>3.其他类型转换为布尔类型 Boolean(变量)<br>代表 空、否定的值会被转换为false , 如 ‘’ 、 0 、NAN 、 undefined 。、<br>其余值都会被转换为true<br>console.log(Boolean(‘’));             //flase<br>console.log(Boolean(0));             //flase<br>console.log(Boolean(NAN));          //flase<br>console.log(Boolean(null));        //flase<br>console.log(Boolean(undefined));  //flase<br>console.log(Boolean(‘小白’));    //true<br>console.log(Boolean(12));       //true</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>运算符：</strong><br>1.浮点数在算数运算符里会有问题<br>console.log(0.1+0.2) // 0.300000000004<br>console.log(0.7 *  1000) // 7.000000001</p>
+<p>前置自增和后置自增的用法：<br>a++:<br>var a = 10<br>a++     //a++ = 11  a = 11<br>console.log(a)  // 11</p>
+<p>var a = 10<br>console.log(a++  + 12)  //  a++ = 10  a = 11  结果 22</p>
+<hr>
+<p>++a:<br>var a = 10<br>++a     //a++ = 11  a = 11<br>console.log(a)  // 11</p>
+<p>var a = 10<br>console.log(++a  + 12)  //  a++ = 11  a = 11  结果 23</p>
+<p>总结：a++ 和 ++a 单独用法是一样的，但是与其他数字相加的话<br>++a 结果里面的 ++a 和 a 的值都自加 1<br>a++ 结果里面的 a++ 的值不变， a的值加 1</p>
+<p>前置自增：先自加 1，变量也自加 1<br>后置自增：先返回原值，变量再自加 1<br>两个单独使用 无区别，开发时使用 a++ 即可</p>
+<hr>
+<p>= ：等号作用 赋值 把右边的值给左边</p>
+<p>== ：判断 判断两边的值是否相等（主要此时有隐式转换）<br>以下把字符串类型的 18 转换成数字类型的 18<br>console.log( 18 == ‘18’)  //true</p>
+<p>=== :全等 判断两边的值和数据类型是否完全相同<br>console.log( 18 === ‘18’)  //flase<br>console.log( 18 === 18)  //true</p>
+<hr>
+<p><strong>短路运算</strong><br>逻辑与短路运算<br>如果表达式 1 为真，即返回表达式2的值。<br>如果表达式 1 为假，即返回表达式1的值<br>而表示式为假的数值: 0  , ‘’ , null , undefined , NAN<br>console.log(123 &amp;&amp; 235)  // 235<br>console.log(0  &amp;&amp; 123 &amp;&amp; 222)   //0</p>
+<p>逻辑或短路运算<br>如果表达式 1 为真，即返回表达式1的值。<br>如果表达式 1 为假，即返回表达式2的值<br>而表示式为假的数值: 0  , ‘’ , null , undefined , NAN<br>console.log(123 || 235)  //123<br>console.log(0  || 444 ||12333)   //444</p>
+<hr>
+<p><strong>三元表达式</strong><br>条件表达式？ 表达式 1 :表达式 2 ;<br>var num = 5<br>var result = num&gt;3 ? ‘是的’ : ‘不是的’;<br>console.log(result)   // 是的</p>
+<hr>
+<p><strong>switch语句</strong><br>switch（表达式）{<br>    case value1:<br>    执行语句1<br>    break；<br>    case value2:<br>    执行语句2<br>    break；<br>    case value3:<br>    执行语句3<br>    break；<br>    …..<br>    default:<br>    执行最后语句;<br>}</p>
+<p>执行思路  利用我们的表达式的值  和 case 后面的选项值相匹配  如果匹配上，就执行该case里面的语句，如果没有匹配上 ，那么执行 default里面的语句</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>for循环语句:</strong> 注意 <code>var str = &#39;&#39;</code>只能用作全局变量<br>*<br>**</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;script&gt;<br>var str &#x3D; &#39;&#39;<br>for(var i&#x3D;1;i&lt;&#x3D;5;i++)&#123;<br>for (var j&#x3D;1; j&lt;&#x3D;i;j++)&#123;  <br>str &#x3D; str + &#39;&#39;<br>&#125;<br>str &#x3D; str + &#39;\n&#39;<br>&#125;<br>console.log(str);<br>&lt;&#x2F;script&gt;<br></code></pre></td></tr></table></figure>
+
+<p>**<br>*</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;script&gt;<br>var str &#x3D; &#39;&#39;<br>for(var i&#x3D;1;i&lt;&#x3D;5;i++)&#123;<br>for (var j&#x3D;i; j&lt;&#x3D;5;j++)&#123;  <br>str &#x3D; str + &#39;&#39;<br>&#125;<br>str &#x3D; str + &#39;\n&#39;<br>&#125;<br>console.log(str);<br>&lt;&#x2F;script&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>while循环语句 </strong></p>
+<p>while (条件表达式)<br>{<br>循环体代码<br>条件表达式结束的代码<br>}<br>如果while语句里的条件表达式一直为真，会一直循环体里面的代码，进入死循环。<br>要在后面加入条件表达式为假的代码，也就是条件表达式结束的代码</p>
+<p><strong>do while 循环语句</strong></p>
+<p>do<br>{<br>循环体代码<br>条件表达式结束的代码<br>}<br>while(条件表达式)<br>do while 语句至少会执行一次循环体代码</p>
+<hr>
+<p><strong>continue 关键字</strong>：退出本次循环，继续执行下次循环<br>for(var i=1 ;i&lt;=5 ;i++)<br>{<br>    if(i==3)<br>    {<br>    continue;<br>    }<br>    console.log(‘我是’+i+’次’)<br>}<br>打印的结果：<br>我是1次<br>我是2次<br>我是4次<br>我是5次</p>
+<p><strong>break 关键字</strong>：退出本次循环，不会执行下次循环<br>for(var i=1 ;i&lt;=5 ;i++)<br>{<br>    if(i==3)<br>    {<br>    break;<br>    }<br>    console.log(‘我是’+i+’次’)<br>}<br>打印的结果：<br>我是1次<br>我是2次</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>数组</strong><br>创建数组的两种方式：<br>1.var arr = new Array();<br>2.var arr = [];</p>
+<p>遍历数组：<br>var arr = [1,2,3,4]<br>for(var i=0 ;i&lt;4; i++){<br>    console.log(arr[i])<br>}</p>
+<p>数组的长度:<br>数组名.length<br>1.数组的长度是元素的个数，不要跟索引号混淆</p>
+<p>求数组里面的最大值：<br>var array = [11,23,44,55,1,7,88]<br>var max = array[0]<br>for(var i=0; i&lt; array.length; i++)<br>{<br>if(max&lt; array[i]){<br>    max = array[i]<br>}<br>}<br>console.log(max)</p>
+<p>数组转换成字符串：<br>var array = [‘a’,’b’,’c’]<br>var sep = ‘!’<br>var str = ‘’<br>for(var i=0; i&lt; array.length; i++)<br>{<br>str +=array[i] +sep;<br>}<br>console.log(str)</p>
+<p>1.新增数组元素，修改数组的长度：<br>var array = [‘a’,’b’,’c’]<br>array.length = 5;<br>console.log(array[3]); // unfined<br>console.log(array[4]); // undefined</p>
+<p>2.新增数组元素，修改索引号追加数组元素：<br>var array = [‘a’,’b’,’c’]<br>array[3] = ‘yellow’ //<br>console.log(array); // [‘a’,’b’,’c’,’yellow’]<br>array[0] = ‘aaa’ // [‘aaa’,’b’,c’,’yellow’] 替换原来的元素<br>array = ‘yellow’ // [‘yellow’] <strong>不要直接给数组名赋值，否则里面的数组元素都没有了。</strong> </p>
+<p>3.建立一个数组，里面存1-10的整数<br>var arr =[]<br>for(var i=0 ;i&lt;10; i++){<br>    arr[i] = i+1;<br>}<br>console.log(arr)</p>
+<p>4.筛选数组：<br>var arr = [11,2,33,4,56]<br>var newArr = [];<br>var j = 0;<br>for(var i=0;i&lt; arr.length; i++ )<br>{<br>    if(arr[i]&gt;10)<br>    {<br>      newArr[j] = arr[i];<br>      j++;<br>     }<br>}<br>console.log(newArr);</p>
+<p>var arr = [11,2,33,4,56]<br>var newArr = [];<br>for(var i=0;i&lt; arr.length; i++ )<br>{<br>    if(arr[i]&gt;10)<br>    {<br>      newArr[newArr.length] = arr[i];<br>      j++;<br>     }<br>}<br>console.log(newArr);</p>
+<p>5.翻转数组：<br>var arr = [‘red’,’blue’,’skyblue’];<br>var newArr=[];<br>for(var i=arr.length-1;i&gt;=0;i–)<br>{<br>    newArr[newArr.length] = arr[i];<br>}<br>console.log[newArr];</p>
+<p><strong>6.数组冒泡排序：</strong><br>var arr = [5,4,3,2,1];<br>for(var i = 0; i&lt;=arr.length -1;i++)<br>{<br>    for(var j=0;j&lt;=arr.length-i-1;j++)<br>    {<br> if(arr[j]&gt;arr[j+1])<br> {<br>var temp;<br>temp = arr[j];<br>arr[j] = arr[j+1];<br>arr[j+1] = temp;<br> }<br>}<br>}<br>console.log(arr)</p>
+<hr>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>函数:</strong><br>function 函数名 (形参1，形参2…)<br>{<br>函数体<br>}<br>函数名(实参1，实参2….);</p>
+<p>求任意两个数之间相加:<br>function getSum   (start , end)<br>{<br>    var  sum =0<br>    for(var i=start ;i&lt;=end ;i++)<br>    {<br>         sum+=i;<br>    }<br>    console.log(sum);<br>}<br>getSum(20,100);</p>
+<p>形参和实参匹配的问题：</p>
+<p>1.形参和实参的个数一致时，正常输出结果<br>2.实参的个数大于形参时，会取到形参的个数，后面多余的实参不计<br>function getSum (num1,num2)<br>{<br>num1+num2     // 1+2<br>}<br>getSum(1,2,3);<br>3.实参的个数小于形参时，多的形参定义为undefined,结果为NAN<br>function getSum (num1,num2)<br>{<br>num1+num2     // 1 + undefined = NAN<br>}<br>getSum(1);</p>
+<p>函数的返回值格式：<br>function 函数名 ()<br>{<br>  return 需要返回的结果<br>}<br>函数名();</p>
+<p>函数名（）=return 后面返回的结果<br>function getReturn ()<br>{<br>  return 6666<br>}<br>console.log(getgetReturn()); //打印6666</p>
+<p>求任意两个数的和<br>function getSum (num1,num2)<br>{<br>  return num1+num2<br>}<br>getSum(1,2);<br>console.log(getSum(1,2));  //打印 3</p>
+<p>利用函数求两个数的最大值<br>function getMax (num1,num2)<br>{<br>  return num1&gt;num2? num1:num2;<br>}<br>console.log(getMax(33,2));  //打印 33</p>
+<p>利用函数求数组中最大值<br>function getArrMax(arr)<br>{<br>  var max = arr[0]<br>  for(var i =1; i&lt; arr.length; i++){<br>  if(arr[i]&gt;max){<br>  max = arr[i]<br>}<br>}<br>return max<br>}<br>  var re =  getArrMax([1,2,3])<br>  console.log(re)</p>
+<p><strong> return 注意点：</strong><br> 1.return后面的代码不会被执行<br> 2.return只能返回一个值(返回最后一个值):  return num1,num2;  //返回num2<br> 3.可以利用数组来返回多个值 return [num1,num2];</p>
+<p> 函数若没有return 返回undefined<br> function getReturn ()<br>{</p>
+<p>}<br>console.log(getgetReturn()); //打印 undefined</p>
+<p>break,continue,return 的区别<br>1.break:结束当前的循环体（如for while）<br>2.continue:跳出本次循环，继续执行下次循环（如for while）<br>3.return:不仅可以退出循环，还能够返回return语句中的值，同时还可以结束当前函数体的代码。</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>arguments的使用:</strong><br>arguments用来存储所有传递过来的实参<br>function fn ()<br>{<br>console.log(arguments); //打印 [1,2,3]<br>}<br>fn(1,2,3)</p>
+<p>arguments展示的是一个伪数组<br><strong>伪数组:</strong><br>1.具有数组的length属性<br>2.按照索引的方式进行存储。<br>3.没有数组的真正的方法 push() pop()等等</p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>函数调用另一个函数</strong><br>function fn1 ()<br>{<br>    console.log(111)<br>    fn2();<br>}<br>fn1();</p>
+<p>function fn1 ()<br>{<br>    console.log(222)</p>
+<p>}</p>
+<p>fn1 函数打印结果 111  222</p>
+<p><strong>函数的两种声明方式</strong><br>1.利用函数关键字自定义函数（命名函数）<br>function fn()<br>{</p>
+<p>}<br>fn();<br>2.函数表达式（匿名函数）<br>var fun = function()<br>{<br>    console.log(‘我是匿名函数’)<br>}<br>fun();</p>
+<p>(1) fun 是变量名  不是函数名<br>(2) 函数表达式声明方式跟声明变量差不多，只不过变量里面存的是值，而函数表达式里面存的是函数<br>(3) 函数表达式里面也可以进行传递参数</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>javascript作用域:</strong><br>1.javascript作用域 ：代码名字（变量）在某个范围内起作用和效果 目的是为了提高程序的可靠性更重要的是减少命名冲突<br>2.js作用域（es6）之前： 全局作用域     局部作用域<br>3.全局作用域: 整个script</p>
+<p><strong>全局变量</strong><br>在全局作用域下的变量  在全局下都可以使用<br>如果一个变量这样赋值  num = 10 前面没有声明 var 这样的num 为全局变量</p>
+<p><strong>局部变量</strong><br>在局部作用域下的变量   后者在函数内部的变量就是  局部变量<br>注意: 函数的形参也可以看做是局部变量</p>
+<p><strong>从执行效率来看全局变量和局部变量</strong><br>1.全局变量只有浏览器关闭的时候才会销毁，比较占内存资源<br>2.局部变量 当我们程序执行完毕就会销毁，比较节约内存资源</p>
+<p><strong>块级作用域</strong><br>块级作用域: 只在代码块里面起作用的。{ var num = 10 } num只在 {} 里面起作用<br>js在es6之前没有块级作用域<br>if(3&lt;5)<br>{<br>    var num = 10<br>}<br>console.log(num) //在ES6之后是打印不出10 ；es5是可以打印 10</p>
+<p><strong>作用域链</strong><br>作用域链: 内部函数访问外部函数的变量，采用的是链式查找的方式来决定去哪个值<br>就近原则</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;script&gt;<br>var num &#x3D; 10<br>function fn()&#123;<br>	var num &#x3D;20;<br>	function fun()&#123;<br>		console.log(num)  &#x2F;&#x2F;打印  20<br>	&#125;<br>	fun();<br>&#125;<br>fn();<br>&lt;&#x2F;p&gt;script&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>JS预解析</strong><br>1.我们js引擎运行js 分为两步 : 预解析  代码执行<br>(1).预解析  js引擎把js 里面所有的  var  还有 function 提到当前作用域的最前面<br>(2).代码执行  按照代码书写顺序从上往下执行<br>2.预解析分为 变量预解析（变量提升） 和 函数预解析（函数提升）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs plain">案列1: 用到了变量的提升 注意:var fun &#x3D; 函数体    只需提升变量，函数体不提升。<br>fun();<br>var fun &#x3D; function()<br>&#123;<br>	console.log(222)<br>&#125;<br>&#x2F;&#x2F;相当于执行了以下代码<br>var fun<br>fun();<br>fun &#x3D; function()<br>&#123;<br>	console.log(222)<br>&#125;<br><br><br><br>案列2: 用到了变量的提升 和函数的提升<br>var num &#x3D; 10;<br>fun();<br>function fun()&#123;<br>	console.log(num);<br>	var num &#x3D; 20;<br>&#125;<br>&#x2F;&#x2F; 相当于执行了以下代码:<br>var num;<br>function fun()&#123;<br>	var num;<br>	console.log(num);  &#x2F;&#x2F;打印undefined<br>	 num &#x3D; 20;<br>&#125;<br>num &#x3D; 10<br>fun();<br></code></pre></td></tr></table></figure>
+
+<p><code>var a = b = c = 9; 相当于 var a = 9 ; b = 9; c = 9; 这里的 b c 看做全局变量,没有var声明</code><br><code>集体声明变量 var a=9,b=9,c=9 ;这里的 a = b = c =9</code></p>
+<hr>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>JS对象</strong><br>JS对象:由属性和方法组成的。<br><strong>1.利用对象字面量创建对象</strong><br>var obj = {};</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs plain">var obj &#x3D; &#123;<br>	uname: &#39;张三丰&#39;,<br>	age: 18,<br>	sex: &#39;男&#39;,<br>	&#x2F;&#x2F;sayHi 方法<br>	sayHi: function()&#123;<br>		console.log(&#39;hi~&#39;);<br>	&#125;<br>&#125;<br>&#x2F;&#x2F;调用属性的方法<br>console.log(obj.uname);<br>console.log(obj[&#39;age&#39;]);<br>&#x2F;&#x2F;调用方法<br>obj.sayHi();<br></code></pre></td></tr></table></figure>
+
+<p><strong>变量 属性 函数  方法的区别</strong><br><code>1.变量和属性的相同点  他们都是用来存储数据的</code></p>
+<p><code>变量  单独声明并赋值  使用的时候直接写变量名  单独存在</code><br><code>属性  在对象里面不需要声明的  使用的时候必须是  对象.属性</code></p>
+<p><code>2.函数和方法的相同点  都是现实某种功能  做某件事</code></p>
+<p><code>函数是单独声明  并且调用的  函数名() 单独存在</code><br><code>方法 在对象里面 调用的时候  对象.方法()</code></p>
+<p><strong>2.利用new Object创建对象</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plain">var obj &#x3D; new Object();  &#x2F;&#x2F;创建了一个空的对象<br>obj.uname &#x3D; &#39;张三丰&#39;;<br>obj.age &#x3D; 18 ;<br>obj.sayHi &#x3D; function()&#123;<br>	console.log(&#39;Hi~&#39;)<br>&#125;<br><br>&#x2F;&#x2F;调用属性的方法<br>console.log(obj.uname);<br>console.log(obj[&#39;age&#39;]);<br>&#x2F;&#x2F;调用方法<br>obj.sayHi();<br></code></pre></td></tr></table></figure>
+<p><code>注意 利用new Object创建对象 里面的 O 是大写的</code></p>
+<p><strong>3.利用构造函数创建对象</strong><br>为什么要使用构造函数来创建对象:<br>前面两种创建对象一次只能创建一个对象，如果要创建多个对象要重复使用代码。</p>
+<p>构造函数: 把对象里面一些相同的属性和方法抽象出来封装到函数里面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plain">function Star (uanme ,age,sex)&#123;<br>	this.uname &#x3D; uname;<br>	this.age &#x3D; age;<br>	this.sex &#x3D; sex;<br>	this.sing &#x3D; function(sang)&#123;<br>		console.log(sang);<br>	&#125;<br>&#125;<br>var ldh &#x3D; new Star(&#39;刘德华&#39;, 18,&#39;男&#39;)<br>console.log(ldh.name);  &#x2F;&#x2F;打印刘德华<br>console.log(ldh[&#39;sex&#39;]); &#x2F;&#x2F;打印 男<br>ldh.sing(&#39;冰雨&#39;)<br><br>var zxy &#x3D; new Star(&#39;张学友&#39;, 19,&#39;男&#39;)<br>console.log(zxy.name);  &#x2F;&#x2F;打印张学友<br>console.log(zxy[&#39;sex&#39;]); &#x2F;&#x2F;打印 男<br>zxy.sing(&#39;李香兰&#39;)<br></code></pre></td></tr></table></figure>
+<p><code>注意：</code><br><code>1.构造函数的名字首字母要大写</code><br><code>2.构造函数不需要return 就可以返回结果</code><br><code>3.调用构造函数需要要用 new</code><br><code>4.只要new Star() 调用函数就创建一个对象 ldh{}</code><br><code>5.属性和方法前面必须使用this指向</code></p>
+<p>1.构造函数泛指的某一大类<br>2.对象特指是一个具体的事物<br>3.我们利用构造函数创建对象的过程称为对象的实例化。</p>
+<p><strong>new关键字的执行过程</strong><br>1.new构造函数可以在内存中创建一个空的对象<br>2.this就会指向刚才创建的空的对象<br>3.执行构造函数里面的代码  给这个空的对象添加属性和方法<br>4.返回这个对象（构造函数里面不需要return了）</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>遍历对象</strong><br>var obj = {<br>    name: ‘越前’,<br>    age:18 ,<br>    sex: ‘男’<br>}</p>
+<p>for(var k in obj)  //for in 里面的变量我们常用的是 k 或者 key<br>{<br>    console.log(k)  // k 变量 输出得到的属性名 name age sex<br>    console.log(boj[k]) //boj[k] 得到的是 属性值<br>}</p>
+<hr>
+<p>对象分为: 自定义对象  内置对象  浏览器对象</p>
+<p><strong>内置对象:</strong><br>Math数学对象: 不是一个构造函数，不需要new来调用，直接使用里面的属性和方法即可<br>console.log(Math.PI); //一个属性 圆周率<br>console.log(Math.Max(1,99,22));  // 99<br>console.log(Math.Max(-1，-10));  // -1<br>console.log(Math.Max(-1，-10，’longma’));  // NAN 非数字类型<br>console.log(Math.Max());  // -Infinity 负无穷大</p>
+<p><strong>封装自己的函数对象</strong><br>var myMath {<br>    PI: 3.1415926,<br>    max: function(){<br>    var max = arguments [0];<br>    for(var i=1;i&lt; arguments.length;i++)<br>    {<br>        if(arguments[i]&gt;max)<br>        {<br>            max = arguments[i];<br>        }<br>    }<br>    return max ;<br>},<br>min:function(){<br>    var min = arguments [0];<br>    for(var i=1;i&lt; arguments.length;i++)<br>    {<br>        if(arguments[i]&lt; min)<br>        {<br>            min = arguments[i];<br>        }<br>    }<br>    return min ;<br>},<br>}</p>
+<p>console.log(myMath.PI)<br>console.log(myMath.max(1,2,3,4))<br>console.log(myMath.min(1,2,3,4))</p>
+<p><strong>Math绝对值和三个取整方法</strong><br>//1.绝对值方法<br>console.log(Math.abs(1));  //1<br>console.log(Math.abs(-1));  //1<br>console.log(Math.abs(‘-1’)); // 隐式转换 会把字符型 -1 转换成数字型，结果还是 1<br>console.log(Math.abs(‘越前’));  //NAN 非数字类型</p>
+<p>//2.三个取整的方法<br>//(1) Math.floor() 向下取整<br>console.log(Math.floor(1.1));  // 1<br>console.log(Math.floor(1.9));  // 1</p>
+<p>//(2) Math.ceil()  向上取整<br>console.log(Math.ceil(1.1));  // 2<br>console.log(Math.ceil(1.9));  // 2</p>
+<p>//(3) Math.round()   四舍五入  其他数字都是四舍五入 但是 .5 特殊，它往大了取<br>console.log(Math.round(1.1));  // 1<br>console.log(Math.round(1.5));  // 2<br>console.log(Math.round(1.9));  // 2<br>console.log(Math.round(-1.1));  // -1<br>console.log(Math.round(-1.5));  // -1 不是-2 </p>
+<p><strong>Math.random()</strong><br>//1.Math对象随机数方法  random() 返回一个随机数  0 =&lt; x &lt; 1<br>//2.这个方法里面不跟参数<br>//3.代码验证<br>console.log(Math.random()); //打印的数值是 0-1 之前的数，不包含 1 ；比如 0.2111123</p>
+<p>//4.想要两个数之间的随机整数，且包含这两个整数<br>function getRandom (min max)<br>{<br>    return Math.floor(Math.random() * (max-min + 1)) + min;<br>}<br>console.log(getRandom(1,10));</p>
+<p>//5.随机点名<br>var arr = [‘张三’,’李四’,’王五’,’吾六’]<br>console.log(arr[getRandom(0,arr.length - 1)])</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>Date() </strong><br>Date()   日期对象 是一个构造函数 必须使用new 来调用我们创建的日期对象<br>//1. 使用Date() 如果没有参数  返回当前系统的当前时间<br>var date = new Date();<br>console.log(date);</p>
+<p>//2. 参数常用写法  数字型  2019,10,02  (返回的月份大一月) 或者是字符串写法’2019-10-01 08:06:06’<br>var date1 = new Date(2019,10,02);<br>console.log(date1);  //返回的是11月,不是10月<br>var date2= new Date(‘2019-10-01 08:06:06’);<br>console.log(date2);  //返回的是10月</p>
+<p>//格式化日期  年月日<br>var date = new Date();<br>var year = date.getFullYear();  // 获取年<br>var month = date.getMonth();    // 获取月<br>var dates = date.getDate();    //  获取日<br>var day = date.getDay();       //  获取星期几<br>var arr = [‘星期天’,’星期一’,’星期二’,’星期三’,’星期四’,’星期五’,’星期六’]<br>console.log(‘今天是’+year+’年’+month+’月’+dates+’日’+arr[day]);</p>
+<p>//格式化日期  时分秒<br>function getTimer (){<br>    var time = new Date();<br>    var h = time.getHours();<br>    h = h&lt;10? “0”+ h:h;<br>    var m = time.getMinutes();<br>    m = m&lt;10? “0”+ m:m;<br>    var s = time.getSeconds();<br>    s = s&lt;10? “0”+ s:s;<br>    return h + “:” + m + “:” + s ;<br>}<br>console.log(getTimer());</p>
+<hr>
+<p><strong>获取Date总的毫秒数（时间戳）不是当前时间的毫秒数，而是距离1970年1月1日过了多少毫秒数</strong><br>1.通过 valueOf()  getTime()<br>var date = new Date()<br>console.log(date.valueOf()); //返回的是 我们现在时间  距离1970.1.1 总的毫秒数<br>console.log(date.getTime());<br>2.简单的写法(最常用的写法)<br>var date1 =  +new Date();  // +new Date()<br>console.log(date1);<br>3.H5 新增的 获得总的毫秒数<br>console.log(Date.now());</p>
+<p><strong>倒计时的制作</strong><br>1.获取当前时间的时间戳，和未来要设置的时间戳，总的毫秒数相减<br>2.相减的毫秒数，转换为 天 时 分 秒</p>
+<p>function countDown (time){<br>    var nowTime = +new Date(); //获取当时时间的时间戳<br>    var inputTime = +new Date(time); //获取输入的时间戳<br>    var times = (inputTime - nowTime)/1000  //毫秒数转换成秒<br>    var d = parseInt(times / 60 / 60 / 24)  // 天<br>    d=d&lt;10? ‘0’+d :d;<br>    var h = parseInt(times / 60 / 60 % 24)  // 小时<br>    h=h&lt;10? ‘0’+h :h;<br>    var m = parseInt(times / 60 % 60 )      //分钟<br>    m=m&lt;10? ‘0’+m :m;<br>    var s = parseInt(times % 60 )           //秒<br>    s=s&lt;10? ‘0’+s :s;<br>    return d+’天’+h+’小时’+m+’分钟’+m+’秒’<br>}<br>console.log(countDown(2020-11-25 12:00))</p>
+<p>//计算的核心算法很简单:<br>1.简单的把秒转换成天的公式<br>d = parseInt(times / 60 （分钟）/ 60（小时） / 24（天数）)  // 天<br>2.把秒转换成小时，需要首先排除天数的干扰，所以取余24.<br>h = parseInt(times / 60（分钟） / 60（小时） % 24（去除天数的小时）)  // 小时<br>3把秒转换成分钟和秒数与秒转换成小时的算法一样的，就不写了。</p>
+<hr>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>数组对象 </strong><br>//创建数组的两种方式</p>
+<ol>
+<li><p>利用数字字面量<br>var arr = [1,2,3];<br>console.log(arr[0]);</p>
+</li>
+<li><p>利用new Array()<br>var arr1 = new Array(); //创建了一个空的数组<br>var arr1 = new Array(2);// 这个 2 表示数组长度为 2 ，里面有两个空的数组元素<br>var arr1 = new Array(2,3);// 等价于[2,3] 这样写表示 里面有2个数组元素 是 2和3</p>
+</li>
+</ol>
+<p><strong>判断是否为数组的两种方法</strong><br>1.instanceof<br>var arr = [];<br>var obj = {};<br>console.log(arr instanceof Array)  // 打印 true<br>console.log(obj instanceof Array) //打印 false<br>2.Array.isArray(参数)  H5新增的方法 ie9以上版本支持的<br>var arr = [];<br>var obj = {};<br>console.log(Array.isArray(arr))  // 打印 true<br>console.log( Array.isArray(obj)) //打印 false</p>
+<p><strong>添加数组元素的方法</strong></p>
+<ol>
+<li><p>push() 在我们数组的末尾 添加一个或者多个元素 push 推<br>var arr = [1,2,3];<br>arr.push(4,’pink’)<br>console.log(arr.push(4,’pink’)); //打印的 5  表示数组的长度<br>console.log(arr); //打印 [1,2,3,4,’pink’]<br>总结 :<br>1) push 是可以给数组追加新的元素<br>2）push() 参数直接写 数组元素就可以了<br>3) push 完毕之后返回的结果是 新的数组长度<br>4) 原数组也会发生变化</p>
+</li>
+<li><p>unshift() 在我们数组的前面 添加一个或者多个元素<br>var arr = [1,2,3];<br>arr.unshift(4,’pink’)<br>console.log(arr.unshift(4,’pink’)); //打印的 5  表示数组的长度<br>console.log(arr); //打印 [4,’pink’,1,2,3]<br>总结 :<br>1) unshift 是可以给数组追加新的元素<br>2) unshift() 参数直接写 数组元素就可以了<br>3) unshift 完毕之后返回的结果是 新的数组长度<br>4) 原数组也会发生变化</p>
+</li>
+</ol>
+<p><strong>删除数组元素的方法</strong></p>
+<ol>
+<li><p>pop() 它可以删除删除数组的最后一个元素<br>var arr = [1,2,3];<br>arr.pop();<br>console.log(arr.pop()); //打印的 3 删除的这个元素<br>console.log(arr); //打印 [1,2]<br>总结 :<br>1) pop() 是可以删除数组的最后一个元素,记住一次只能删除一个元素<br>2) pop()  没有参数<br>3)pop() 完毕之后返回的结果是 删除的那个元素<br>4) 原数组也会发生变化</p>
+</li>
+<li><p>shift() 它可以删除删除数组的第一个元素<br>var arr = [1,2,3];<br>arr.shift();<br>console.log(arr.shift()); //打印的 1 删除的这个元素<br>console.log(arr); //打印 [2，3]</p>
+</li>
+</ol>
+<p>总结 :</p>
+<p>1) shift() 是可以删除数组的第一个元素,记住一次只能删除一个元素<br>2) shift()  没有参数<br>3)shift() 完毕之后返回的结果是 删除的那个元素<br>4) 原数组也会发生变化</p>
+<p><strong>数组排序</strong></p>
+<ol>
+<li><p>reverse() 翻转数组<br>var arr = [1,2,3,4];<br>arr.reverse();<br>console.log(arr); //打印[4,3,2,1]</p>
+</li>
+<li><p>数组排序 (冒泡排序)<br>// 使用于个位数的排序<br>var arr = [1,3,4,2];<br>arr.sort();<br>console.log(arr) // 打印[1,2,3,4]<br><strong>提示:以上这个方法只适用于个位数的处理</strong><br>如果含有个位及十位数会出现以下情况:<br>var arr = [1,13,4,22];<br>arr.sort();<br>console.log(arr) // 打印[1,13,22,4];</p>
+</li>
+</ol>
+<p>// 使用于个位数及多位数的排序<br>var arr = [1,13,4,12,17];<br>arr.sort(function(a,b){<br>    return a-b  //升序的顺序排列<br>    return b-a  //降序的顺序排列<br>});<br>console.log(arr) // 升序打印[1,4,12,13,17]<br>console.log(arr) // 降序打印[17，13,12,4,1]</p>
+<p><strong>返回数组元素索引号方法  indexOf(数组元素) 作用就是返回该数组元素的索引号 从前面开始查找</strong><br>//1.它只返回第一满足条件的索引号<br>//2.它如果在该数组里面找不到元素，则返回的是 -1<br>var arr = [‘red’,’bule’,’skyblue’]<br>console.log(arr.indexOf(‘blue’));  //打印数组索引号 1<br>console.log(arr.indexOf(‘pink’));  //打印数组索引号 -1 表示不存在该元素</p>
+<p><strong>返回数组元素索引号方法  lastIndexOf(数组元素)作用就是返回该数组元素的索引号 从后面开始查找</strong><br>//1.它只返回第一满足条件的索引号<br>//2.它如果在该数组里面找不到元素，则返回的是 -1<br>var arr = [‘red’,’bule’,’skyblue’]<br>console.log(arr.lastIndexOf(‘blue’));  //打印数组索引号 1<br>console.log(arr.lastIndexOf(‘pink’));  //打印数组索引号 -1 表示不存在该元素</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>数组去重（很重要）</strong><br>// 封装一个 去重的函数 unique 独一无二的<br>function unique(arr){<br>var newArr = [];<br>    for(var i=0; i&lt; arr.length ;i++){<br>    if(newArr.indexOf(arr[i]) ===-1){<br>    newArr.push(arr[i]);<br>}<br>}<br>return newArr;<br>}<br>var demo = unique([‘c’,’c’,’b’,’a’]);<br>console.log(demo); // 返回的数组 [‘c’,’b’,’a’]</p>
+<p><strong>数组转换成字符串</strong><br>//1. toString() 将我们的数组转换为字符串<br>var arr = [1,2,3];<br>console.log(arr.toString());  // 1,2,3<br>//2. join(分隔符)<br>var arr = [‘red’,’blue’,’skyblue’];<br>console.log(arr.join()); // red,blue,skyblue<br>console.log(arr.join(‘-‘)); // red-blue-skyblue</p>
+<p><strong>concat()连接两个或者多个数组  不影响原数组</strong><br>concat() 方法用于连接两个或多个数组。<br>var arr1 = [1, 2, 3];<br>var arr2 = [4, 5, 6];<br>var arr3 = [7, 8];<br>console.log(arr1.concat(arr2, arr3));  //打印 [1,2,3,4,5,6,7,8]</p>
+<p><strong>slice 数组截取  slice(begin,end) 返回被截取项目的新数组</strong><br>var arr = new Array(3)<br>arr[0] = “George”<br>arr[1] = “John”<br>arr[2] = “Thomas”<br>console.log(arr.slice(1)) // John,Thomas<br>arr.slice(1) : 表示从第一个数组元素后面开始截取到最后</p>
+<p>var arr = new Array(6)<br>arr[0] = “George”<br>arr[1] = “John”<br>arr[2] = “Thomas”<br>arr[3] = “James”<br>arr[4] = “Adrew”<br>arr[5] = “Martin”</p>
+<p>console.log(arr.slice(2,4)); // Thomas,James<br>arr.slice(2,4) : 表示从第一个元素的后面开始截取到第四个元素，也就是 第三个和第四个元素</p>
+<p>如果arr.slice(begin,end)begin是负数，那么它规定从数组尾部开始算起的位置。也就是说，-1 指最后一个元素，-2 指倒数第二个元素，以此类推。</p>
+<p><strong>数组删除splice(第几个开始，要删除的个数，要添加的元素) 返回新的数组，会影响原数组</strong><br><strong>注释：请注意,splice() 方法与slice()方法的作用是不同的,splice() 方法会直接对数组进行修改。</strong><br>splice() 方法可删除从 index 处开始的零个或多个元素，并且用参数列表中声明的一个或多个值来替换那些被删除的元素。</p>
+<p>在本例中，我们将创建一个新数组，并向其添加一个元素：<br>var arr = new Array(6)<br>arr[0] = “George”<br>arr[1] = “John”<br>arr[2] = “Thomas”<br>arr[3] = “James”<br>arr[4] = “Adrew”<br>arr[5] = “Martin”<br>arr.splice(2,0,”William”);<br>console.log(arr);     //George,John,William,Thomas,James,Adrew,Martin</p>
+<p>在本例中我们将删除位于 index 2 的元素，并添加一个新元素来替代被删除的元素：<br>var arr = new Array(6)<br>arr[0] = “George”<br>arr[1] = “John”<br>arr[2] = “Thomas”<br>arr[3] = “James”<br>arr[4] = “Adrew”<br>arr[5] = “Martin”<br>arr.splice(2,1,”William”);<br>console.log(arr);  // George,John,William,James,Adrew,Martin</p>
+<p>在本例中我们将删除从 index 2 (“Thomas”) 开始的三个元素，并添加一个新元素 (“William”) 来替代被删除的元素：<br>var arr = new Array(6)<br>arr[0] = “George”<br>arr[1] = “John”<br>arr[2] = “Thomas”<br>arr[3] = “James”<br>arr[4] = “Adrew”<br>arr[5] = “Martin”<br>arr.splice(2,3,”William”);<br>console.log(arr); //George,John,William,Martin</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>字符串对象</strong><br>基本类型包装:就是把简单数据类型包装成复杂数据类型<br>var str = ‘andy’<br>console.log(str.length);<br>JS会把基本数据类型包装成复杂数据类型，其执行过程如下<br>//1.生成临时变量，把简单类型包装为复杂数据类型<br>var temp = new String(‘andy’);<br>//2.赋值给我们声明的字符变量<br>str = temp ;<br>//3.销毁临时变量<br>temp = null;</p>
+<p><strong>字符串的不可变性，不能大量的拼接字符串。</strong></p>
+<p><strong>根据字符返回位置 str.indexOf(‘要查找的字符’,[起始的位置])</strong><br>var str = ‘改革春风吹满地，春天来了’;<br>console.log(str.indexOf(‘春’)); // 索引为 2<br>console.log(str.indexOf(‘春’,3));//  8   从索引为 3的位置开始查找跳过第一个春 ，第二个春的索引是 8</p>
+<p><strong>查找字符串’a,b,c,o,e,f,o,x,y,o,z,z,o,p,p’</strong><br>var str = ‘a,b,c,o,e,f,o,x,y,o,z,z,o,p,p’;<br>var index = str.indexOf(“o”);<br>var num = 0;<br>while(index != -1){<br>    console.log(index);<br>    num++;<br>    index = str.indexOf(‘o’,index+1);<br>}<br>console.log(num);</p>
+<p><strong>根据位置返回字符 </strong><br>//1. charAt(index) 根据位置返回字符<br>var str = ‘andy’;<br>console.log(str.charAt(3)); // y<br>//遍历所有字符<br>for(var i=0; i&lt; str.length; i++){<br>    console.log(str.charAt(i));<br>}<br>//2. charCodeAt(index) 返回相应索引号的字符ASCII值  目的: 判断用户按下了哪一个键<br>console.log(str.charCodeAt(0)); //  97  a的索引号 97<br>//3. str[index]  H5新增的<br>console.log(str[0]); // a</p>
+<p><strong>判断一个字符串 ‘a,b,c,o,e,f,o,x,y,o,z,z,o,p,p’ 中出现次数最多的字符，并统计其次数</strong><br>// 核心算法 : 利用charAt() 遍历这个字符串<br>// 把每个字符都存储给对象，如果对象没有该属性，就为1，如果存在就 +1<br>// 遍历对象，得到最大值和该字符<br>var str = ‘abcoefoxyozzopp’;<br>var obj = {}<br>for(var i=0;i&lt; str.length;i++)<br>{<br>    var charAts = str.charAt(i)<br>    if(obj[charAts]){<br>    obj[charAts]++;<br>}<br>else {<br>    obj[charAts] =1;<br>}<br>}<br>console.log(obj);<br>//2. 遍历对象<br>var max = 0;<br>var ch = ‘’;<br>for(var k in obj)<br>{<br>     // k 得到是属性名<br>     // obj[k] 得到的是属性值<br>    if(obj[k]&gt;max)<br>    {<br>        max = obj[k]<br>        ch = k<br>    }<br>}<br>console.log(max); // 4<br>console.log(ch);  // o</p>
+<hr>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>字符串的操作方法</strong><br>//1. concat(‘字符串1’,’字符串2’….)<br>var str = ‘andy’;<br>var str1 = ‘blue’;<br>console.log(str.concat(“red”));  // andyred<br>console.log(str.concat(str1));   // andyblue</p>
+<p>//2. substr(‘截取的起始位置’,’截取几个字符’)<br>var str = ‘改革春风吹满地’;<br>console.log(str.substr(2,2));  //打印 春风<br>//第一个2 是索引号的2 从第几个开始  第二个2 是取几个字符</p>
+<p><strong>替换字符 replace(‘被替换的字符’,’替换的字符’) 它只会替换第一个字符</strong><br>var str = ‘andyandy’<br>console.log(str.replace(‘a’,’b’)); //打印 bndyandy</p>
+<p>// 有一个字符串’abcoefoxyozzopp’ 要求把里面所有的 o 替换为 *<br>var str = ;<br>while(str.indexOf(‘o’)!== -1){<br>    str = str.replace(‘o’,’ * ‘)<br>}<br>console.log(str) // abc* ef* xy* zz* pp</p>
+<p><strong>字符转换为数组 split(‘分隔符’) 前面是 join 把数组转换为字符串</strong><br>var str = ‘red,pink,blue’;<br>console.log(str.split(‘,’)); // [“red”,”pink”,”blue”]<br>var str1 = ‘red&amp;pink&amp;blue’<br>console.log(str1.split(‘&amp;’)); //[“red”,”pink”,”blue”]</p>
+<p><strong>toUpperCase() 转换大写      toLowerCase() 转换小写</strong><br>//1. toUpperCase() 转换大写<br>var str=”Hello World!”;<br>console.log(str.toUpperCase()); //HELLO WORLD!</p>
+<p>//2. toLowerCase() 转换小写<br>var str=”Hello World!”;<br>console.log(str.toLowerCase()); //hello world!</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>简单数据类型和复杂数据类型</strong><br>// 简单数据类型 null 返回的是一个空的对象 object<br>var time = null;<br>console.log(typeof time); // object<br><strong>如果有一个变量打算存储为对象，暂时没有想好放啥，这个时候就给 null</strong></p>
+<p><strong>简单数据类型，又称为值类型。复杂数据类型又称为引用类型</strong><br>值类型: 在存储变量中存储的是值本身<br>string , number , boolean , undefined , null<br>引用类型: 在存储时变量中存储的仅仅是地址（引用）<br>通过 new 关键字创建的对象（系统对象 ，自定义对象）, Object Array Date 等</p>
+<p><strong>堆和栈</strong><br>栈: 简单数据类型放到栈里面<br>堆: 复杂数据类型放到堆里面<br><strong>简单数据类型 直接把数据存在在栈里面的</strong><br> <strong>复杂数据类型 先在栈里面存放地址，然后地址指向堆里面的数据</strong></p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p> —-2020.11.25</p>
+</p>
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckmbg19kd001jnkv4gem553qe/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckmbg19qm008qnkv4a4kdabeg/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            其实你不知道的很多
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckmbg19r0009inkv49hgb78xe/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">学习中发发牢骚</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>

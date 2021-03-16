@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    移动端布局:flex布局 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-flex布局"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  移动端布局:flex布局
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckmbg19q8007vnkv48y812a2a/" class="article-date">
+  <time datetime="2020-11-22T14:34:46.000Z" itemprop="datePublished">2020-11-22</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3953922247,2741721553&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">flex布局的学习</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+移动端布局学习之路
+
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p>传统布局与flex布局的比较<br><strong>传统布局:</strong><br>1.兼容性好<br>2.布局繁琐<br>3.局限性，不能再移动端很好的布局</p>
+<p><strong>flex弹性布局:</strong><br>1.操作方便，布局极为简单，移动端应用很广泛<br>2.PC端浏览器支持情况极差<br>3.IE 11 或者更低版本，不支持或仅部分支持</p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>Flex布局原理</strong></p>
+<ul>
+<li>Flex布局原理就是：给父盒子添加flex属性，来控制子盒子的位置排<br>列方式从而实现flex布局</li>
+<li>当我们为父盒子设为 flex 布局以后，子元素的 float、clear 和<br>vertical-align 属性将失效。</li>
+<li>Flex布局又叫伸缩布局、弹性布局、伸缩盒布局、弹性盒布局、flex<br>布局</li>
+</ul>
+<hr>
+<p><strong>常见父项属性</strong><br>以下由6个属性是对父元素设置的</p>
+<ul>
+<li>flex-direction：设置主轴的方向</li>
+<li>justify-content：设置主轴上的子元素排列方式</li>
+<li>flex-wrap：设置子元素是否换行</li>
+<li>align-content：设置侧轴上的子元素的排列方式（多行）</li>
+<li>align-items：设置侧轴上的子元素排列方式（单行）</li>
+<li>flex-flow：复合属性，相当于同时设置了 flex-direction 和 flex-wrap</li>
+</ul>
+<hr>
+<p><strong>flex-direction 设置主轴的方向</strong><br>flex-direction 设置主轴的方向<br>在 flex 布局中，是分为主轴和侧轴两个方向，同样的叫法有 ： 行和列、x 轴和y 轴</p>
+<ul>
+<li><p>默认主轴方向就是 x 轴方向，水平向右</p>
+</li>
+<li><p>默认侧轴方向就是 y 轴方向，水平向下</p>
+</li>
+</ul>
+<img src="/image/flex/00.png">
+
+<p><strong> flex-direction 设置主轴的方向</strong><br>flex-direction 属性决定主轴的方向（即项目的排列方向）<br>注意： 主轴和侧轴是会变化的，就看 flex-direction 设置谁为主轴，剩下的就是侧轴。而我们的子元素是跟着主轴来排列的</p>
+<ul>
+<li><p>Flex布局中默认的主轴是row，x轴</p>
+</li>
+<li><p>如果想改变主轴方向可通过设置flex-direction来改变</p>
+</li>
+<li><p>flex-direction:row;  默认值从左到右 主轴为x轴</p>
+<img src="/image/flex/01.png"></li>
+<li><p>flex-direction:row- reverse; 从右到左  主轴为x轴，并且翻转</p>
+<img src="/image/flex/02.png">
+</li>
+<li><p>flex-direction:column;  从上到下 将主轴改为y轴，纵轴</p>
+<img src="/image/flex/03.png"></li>
+<li><p>flex-direction:column- reverse; 从下到上 主轴为y轴，并且翻转</p>
+<img src="/image/flex/04.png">
+
+</li>
+</ul>
+<hr>
+<p><strong>设置主轴子元素排列形式</strong></p>
+<ul>
+<li><p>通过justify-content能够设置主轴子元素排列形式</p>
+</li>
+<li><p>值为flex-start 所有子元素在主轴头部显示</p>
+<img src="/image/flex/05.png">
+</li>
+<li><p>值为flex-end 所有子元素在主轴尾部显示</p>
+<img src="/image/flex/06.png">
+</li>
+<li><p>值为flex-center 所有子元素在主轴居中对齐</p>
+<img src="/image/flex/07.png">
+</li>
+<li><p>值为space-around 所有子元素平分剩余空间</p>
+<img src="/image/flex/08.png">
+</li>
+<li><p>值为space-between 所有子元素先两边贴边在平分剩余空间</p>
+<img src="/image/flex/09.png">
+
+</li>
+</ul>
+<hr>
+<p><strong>flex-wrap 设置子元素是否换行</strong><br>默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，flex布局中默认是不换行的。<br><img src="/image/flex/10.png"></p>
+<table>
+<thead>
+<tr>
+<th align="left">属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">nowrap</td>
+<td align="left">默认值，不换行</td>
+</tr>
+<tr>
+<td align="left">wrap</td>
+<td align="left">换行</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>值为flex-wrap: wrap 子元素换行</p>
+<img src="/image/flex/11.png">
+</li>
+<li><p>值为flex-wrap: nowrap 子元素不换行</p>
+<img src="/image/flex/12.png">
+
+</li>
+</ul>
+<hr>
+<p><strong>align-items 设置侧轴上的子元素排列方式（单行 ）</strong><br>该属性是控制子项在侧轴（默认是y轴）上的排列方式 在子项为单项（单行）的时候使用</p>
+<table>
+<thead>
+<tr>
+<th align="left">属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">flex-start</td>
+<td align="left">默认值 从上到下</td>
+</tr>
+<tr>
+<td align="left">flex-end</td>
+<td align="left">从下到上</td>
+</tr>
+<tr>
+<td align="left">center</td>
+<td align="left">挤在一起居中（垂直居中）</td>
+</tr>
+<tr>
+<td align="left">stretch</td>
+<td align="left">拉伸</td>
+</tr>
+</tbody></table>
+<p><strong>该属性是控制子项在侧轴（默认是y轴）上的排列方式</strong></p>
+<ul>
+<li>值为align-items: flex-start <img src="/image/flex/13.png">
+
+
+</li>
+</ul>
+<ul>
+<li>值为align-items: flex-end   从下到上<img src="/image/flex/14.png">
+
+
+</li>
+</ul>
+<ul>
+<li>值为align-items: center  挤在一起居中（垂直居中） <img src="/image/flex/15.png">
+
+
+</li>
+</ul>
+<ul>
+<li>值为align-items: stretch  沿着侧轴方向进行拉伸<img src="/image/flex/16.png">
+
+</li>
+</ul>
+<hr>
+<p><strong>align-content 设置侧轴上的子元素的排列方式（多行）</strong><br>设置子项在侧轴上的排列方式 并且只能用于子项出现 换行 的情况（多行），在<code>单行</code>下是没有效果的。</p>
+<table>
+<thead>
+<tr>
+<th align="left">属性值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">flex-start</td>
+<td align="left">默认值在侧轴的头部开始排列</td>
+</tr>
+<tr>
+<td align="left">flex-end</td>
+<td align="left">在侧轴的尾部开始排列</td>
+</tr>
+<tr>
+<td align="left">center</td>
+<td align="left">在侧轴中间显示</td>
+</tr>
+<tr>
+<td align="left">space-around</td>
+<td align="left">子项在侧轴平分剩余空间</td>
+</tr>
+<tr>
+<td align="left">space-between</td>
+<td align="left">子项在侧轴先分布在两头，再平分剩余空间</td>
+</tr>
+<tr>
+<td align="left">stretch</td>
+<td align="left">设置子项元素高度平分父元素高度</td>
+</tr>
+</tbody></table>
+<ul>
+<li>值为align-items: flex-start  默认值在侧轴的头部开始排列<img src="/image/flex/17.png">
+
+
+</li>
+</ul>
+<ul>
+<li><p>值为align-items: flex-end  在侧轴的尾部开始排列</p>
+<img src="/image/flex/18.png">
+</li>
+<li><p>值为align-items: center  在侧轴中间显示</p>
+<img src="/image/flex/19.png">
+</li>
+<li><p>值为align-items: space-around  子项在侧轴平分剩余空间</p>
+<img src="/image/flex/20.png">
+</li>
+<li><p>值为align-items: space-between 子项在侧轴平分剩余空间</p>
+<img src="/image/flex/21.png">
+
+
+
+</li>
+</ul>
+<p><strong>align-content 和 align-items 区别</strong></p>
+<ul>
+<li>align-items 适用于单行情况下， 只有上对齐、下对齐、居中和 拉伸</li>
+<li>align-content 适应于换行（多行）的情况下（单行情况下无效）， 可以设置 上对齐、 下对齐、居中、拉伸以及平均分<br>配剩余空间等属性值。</li>
+<li>总结就是单行找 align-items 多行找 align-content</li>
+</ul>
+<hr>
+<p><strong>flex-flow</strong><br>flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性<br>flex-flow:row wrap;</p>
+<ul>
+<li>值为flex-flow:row wrap; 是 flex-direction 和 flex-wrap 属性的复合属性(书写没有先后顺序)<img src="/image/flex/22.png">
+
+
+</li>
+</ul>
+<ul>
+<li>flex-direction：设置主轴的方向</li>
+<li>justify-content：设置主轴上的子元素排列方式</li>
+<li>flex-wrap：设置子元素是否换行</li>
+<li>align-content：设置侧轴上的子元素的排列方式（多行）</li>
+<li>align-items：设置侧轴上的子元素排列方式（单行）</li>
+<li>flex-flow：复合属性，相当于同时设置了 flex-direction 和 flex-wrap</li>
+</ul>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>flex布局子项常见属性</strong></p>
+<ul>
+<li>flex 子项目占的份数</li>
+<li>align-self 控制子项自己在侧轴的排列方式</li>
+<li>order属性定义子项的排列顺序（前后顺序）</li>
+</ul>
+<p><strong>flex 属性</strong><br>flex 属性定义子项目分配剩余空间，用flex来表示占多少份数。</p>
+<p><code>.item {</code><br><code>lex: &lt;number&gt;; /* default 0 */</code><br><code>}</code></p>
+<p>经典的三栏布局<br>淘宝的<code>圣杯案例</code>：左右两栏固定宽度，中间部分自适应<br>代码显示<br><img src="/image/flex/23.png"></p>
+<p>效果图显示<br><img src="/image/flex/24.png"></p>
+<p>分蛋糕:1,3盒子各占一份，2号盒子占两份</p>
+<p>代码  效果图显示<br><img src="/image/flex/25.png"></p>
+<hr>
+<p><strong> align-self 控制子项自己在侧轴上的排列方式</strong></p>
+<p>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。<br>默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。</p>
+<p>比如一行排列三个盒子，要让第三个盒子掉下来（控制的是侧轴的排列方式）：<br><img src="/image/flex/26.png"></p>
+<p><strong>order 属性定义项目的排列顺序</strong><br>数值越小，排列越靠前，默认为0。<br>注意：和 z-index 不一样。<br>z-index 属性指定一个元素的堆叠顺序。<br>拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">.item &#123;<br>order: &lt;number&gt;;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>比如一行排列三个盒子，让二号盒子跑到一号盒子前面（控制的是侧轴的排列方式）：<br><img src="/image/flex/27.png"></p>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckmbg19q8007vnkv48y812a2a/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckmbg19r4009unkv4bi5shqz0/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            最近梳理自己学习的东西，然后准备找工作的事情
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckmbg19qy009fnkv4fqrhep0e/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">拜读css权威指南第一遍</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>
