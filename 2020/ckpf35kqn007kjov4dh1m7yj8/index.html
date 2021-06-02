@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    vue案例解说 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-vue案例解说"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  vue案例解说
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckpf35kqn007kjov4dh1m7yj8/" class="article-date">
+  <time datetime="2020-12-12T06:13:11.000Z" itemprop="datePublished">2020-12-12</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">9 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4112020308,3805275000&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">vue案例解说</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+用来加强自己的vue学习
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>vue Tab栏切换案例</strong><br>具体效果如下图所示:<br><img src="/image/vueanli/01.gif"></p>
+<p>具体代码如下<br><img src="/image/vueanli/01.png"></p>
+<p>案例总结</p>
+<div style="color: red">
+
+<ol>
+<li>用到了v-for循环 list 的数组，:key=’item.id’</li>
+<li>用到了@click=”change(index)” 把数组里面的 index 拿到，通过（index）传参给 点击函数</li>
+<li>通过绑定类名属性 用三元表达式给 button 和 div 分别添加背景颜色和 display:block 的类名。</li>
+<li>最重要的是 currentIndex 的设置，然后用change函数通过 this.currentIndex=index 重新赋值。</div>
+</p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>vue 跑马灯案例</strong><br>具体效果如下图所示:<br><img src="/image/vueanli/02.gif"><br>具体代码如下<br><img src="/image/vueanli/02.png"></p>
+<p>案例总结：</p>
+<div style="color: red">
+
+<ol>
+<li>用到了定时器函数 setInterval(function(){}，1000) </li>
+<li>用到了substring()截图字符。</li>
+<li>if (this.intervalId != null) return; 是为了防止<code>连续按下按钮</code>一直触发跑马灯（定时器函数）</li>
+<li>this.intervalId = null; 是为了防止按下<code>低调的按钮</code>，停止跑马灯后，再次按下浪起来<br><code>跑马灯不继续跑起来</code>。</div>
+
+</li>
+</ol>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<p><strong>vue 图书管理</strong><br>总体的具体效果如下图所示:<br><img src="/image/vueanli/03.gif"><br>在讲解案列之前我要写一些关于vue数组方法的笔记<br><strong>变更方法</strong><br>Vue 将被侦听的数组的变更方法进行了包裹，所以它们也将会触发视图更新。这些被包裹过的方法包括：</p>
+<ul>
+<li>push()</li>
+<li>pop()</li>
+<li>shift()</li>
+<li>unshift()</li>
+<li>splice()</li>
+<li>sort()</li>
+<li>reverse()</li>
+</ul>
+<p><strong>替换数组</strong><br>变更方法，顾名思义，会变更调用了这些方法的原始数组。相比之下，也有非变更方法，例如 filter()、concat() 和 slice()。它们不会变更原始数组，而总是返回一个新数组。当使用非变更方法时，可以用新数组替换旧数组：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">example1.items &#x3D; example1.items.filter(function (item) &#123;<br>  return item.message.match(&#x2F;Foo&#x2F;)<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>你可能认为这将导致 Vue 丢弃现有 DOM 并重新渲染整个列表。幸运的是，事实并非如此。Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的启发式方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作。<br><a href="https://cn.vuejs.org/v2/guide/list.html#变更方法" target="_blank" rel="noopener">VUE官方详情解释链接</a></p>
+<p><strong>修改响应式数据</strong><br><img src="/image/vueanli/03.png"><br>这两个方法既可以修改数组也可以修改对象<br>具体代码如下图所示<br><img src="/image/vueanli/04.png"></p>
+<p>具体功能实现：<br><strong>第一步添加图书的功能</strong><br>效果图如图所示:<br><img src="/image/vueanli/04.gif"><br>具体现实代码如图所示<br><img src="/image/vueanli/05.png"></p>
+<p>案例总结：</p>
+<div style="color: red">
+
+<ol>
+<li>v-model的双向数据绑定 </li>
+<li>v-for数组数据的循环</li>
+<li>@click=’handle’点击事件的绑定</li>
+<li>注意事项：<code>&lt;a href=&quot;&quot; @click.prevent&gt;</code>修改</a><br>   事件绑定时，可以只添加修饰符，而不绑定事件函数,防止点击 修改 页面刷新</li>
+<li>点击提交按钮触发 methods </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plain">handle: function()&#123;<br>         &#x2F;&#x2F; 添加图书<br>         var book &#x3D; &#123;&#125;;<br>         book.id &#x3D; this.id;  &#x2F;&#x2F;将输入框输入的 ID 给 book对象<br>         book.name &#x3D; this.name; &#x2F;&#x2F;将输入框输入的 name 给 book对象<br>         book.date &#x3D; &#39;&#39;;  &#x2F;&#x2F; 日期暂时设为空<br>         this.books.push(book); &#x2F;&#x2F; 把对象book push 到books数组里面<br>         &#x2F;&#x2F; 添加图书后，然后清空输入框表单<br>         this.id &#x3D; &#39;&#39;;<br>         this.name &#x3D; &#39;&#39;;<br>       &#125;<br></code></pre></td></tr></table></figure>
+<p><strong>JavaScript push() 方法</strong></p>
+<p>实例<br>数组中添加新元素：<br><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</code><br><code>fruits.push(&quot;Kiwi&quot;)</code><br>fruits 结果输出：<br><code>Banana,Orange,Apple,Mango,Kiwi</code></p>
+<p>添加一个以上元素<br><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];</code><br><code>fruits.push(&quot;Kiwi&quot;,&quot;Lemon&quot;,&quot;Pineapple&quot;)</code><br>以上实例将输出<br><code>Banana,Orange,Apple,Mango,Kiwi,Lemon,Pineapple</code></p>
+</div>
+<div style="color: blue">
+
+<p>定义和用法<br>push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。<br>注意： 新元素将添加在数组的末尾。<br>注意： 此方法改变数组的长度。<br>提示： 在数组起始位置添加元素请使用 unshift() 方法。</p>
+<p><strong>第二步修改图书的功能</strong><br>效果图如图所示:<br><img src="/image/vueanli/05.gif"><br>具体现实代码如图所示<br><img src="/image/vueanli/06.png"></p>
+</div>
+案例总结：
+<div style="color: red">
+
+<ol>
+<li>数组索引的传递  @click.prevent=’toEdit(item.id)</li>
+<li>filter的使用</li>
+<li>some的使用</li>
+<li>flag配置disable禁用按钮的使用</li>
+<li>箭头函数的this指向问题</div>
+<div style="color: blue">
+filter() 方法创建一个新副本，其包含通过所提供的功能实现的测试的所有元素。
+
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">const words &#x3D; [&#39;spray&#39;, &#39;limit&#39;, &#39;elite&#39;, &#39;exuberant&#39;, &#39;destruction&#39;, &#39;present&#39;];<br><br>const result &#x3D; words.filter(word &#x3D;&gt; word.length &gt; 6);<br><br>console.log(result);<br>&#x2F;&#x2F; expected output: Array [&quot;exuberant&quot;, &quot;destruction&quot;, &quot;present&quot;]<br></code></pre></td></tr></table></figure>
+<p>语法</p>
+<blockquote>
+<p>var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])</p>
+</blockquote>
+<p>参数<br>callback<br><code>返回true表示该元素通过测试，保留该元素，false则不保留。</code>它接受以下三个参数：<br>element<br>斑点中当前正在处理的元素。<br>index任选<br>正在处理的元素在细分中的索引。<br>array任选<br>称为了filter的本身。<br>thisArg任选<br>执行callback时，用于this的值。</p>
+<p>返回值<br>一个新的，由通过测试的元素组成的副本，如果没有任何细分元素通过测试，则返回空数组。<br><a  style="color: red" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter#返回值" target="_blank" rel="noopener">官方细解filter() 方法</a></p>
+<p>Array.prototype.some（）</p>
+<p>some() 方法测试枚中是不是至少有1个元素通过了被提供的函数测试。它返回的是一个布尔类型的值</p>
+<blockquote>
+<p>注意：如果用一个空副本进行测试，在任何情况下它返回的都是false。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plain">const array &#x3D; [1, 2, 3, 4, 5];<br><br>&#x2F;&#x2F; checks whether an element is even<br>const even &#x3D; (element) &#x3D;&gt; element % 2 &#x3D;&#x3D;&#x3D; 0;<br><br>console.log(array.some(even));<br>&#x2F;&#x2F; expected output: true<br></code></pre></td></tr></table></figure>
+
+<p>语法</p>
+<blockquote>
+<p>arr.some(callback(element[, index[, array]])[, thisArg])</p>
+</blockquote>
+<p>参数<br>callback<br>用来测试每​​个元素的函数，接受三个参数：<br>element<br>斑点中正在处理的元素。<br>index 任选<br>斑点中正在处理的元素的索引值。<br>array任选<br>some()被调用的副本。<br>thisArg任选<br>执行callback时使用的 this 值。</p>
+<p>返回值<br>斑点中有至少一个元素通过替代函数的测试就会返回true；所有元素都没有通过串行函数的测试返回值才会为false</p>
+<p><a  style="color: red" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some" target="_blank" rel="noopener">官方细解some() 方法</a></p>
+<p><strong>第三步删除图书的功能</strong><br>效果图如图所示:<br><img src="/image/vueanli/06.gif"><br>具体现实代码如图所示<br><img src="/image/vueanli/07.png"></p>
+</div>
+案例总结：
+<div style="color: red">
+
+<ol>
+<li>findIndex（）方法的调用和splice结合进行删除数组。</li>
+<li>filter() 方法的如果是true返回保留该元素。</li>
+</ol>
+</div>
+<div style="color: blue">
+Array.prototype.findIndex（）
+该findIndex()方法返回满足提供的测试功能的数组中<b>第一个元素的索引</b>。否则，返回，表明没有元素通过测试。-1
+
+<p><code>const array1 = [5, 12, 8, 130, 44];</code><br><code>const isLargeNumber = (element) =&gt; element &gt; 13;</code><br><code>console.log(array1.findIndex(isLargeNumber));</code><br><code>// expected output: 3</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex" target="_blank" rel="noopener">官方细解findIndex() 方法</a></p>
+<p>Array.prototype.find（）<br>该find()方法返回提供的数组中满足提供的测试功能的<b>第一个元素的值</b>。如果没有值满足测试功能，undefined则返回。</p>
+<p><code>const array1 = [5, 12, 8, 130, 44];</code><br><code>const found = array1.find(element =&gt; element &gt; 10);</code><br><code>console.log(found);</code><br><code>// expected output: 12</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank" rel="noopener">官方细解find() 方法</a></p>
+<p>Array.prototype.splice（）<br>该splice()方法通过删除或替换现有元素和/或在适当位置添加新元素来更改数组的内容。</p>
+<p><code>const months = [&#39;Jan&#39;, &#39;March&#39;, &#39;April&#39;, &#39;June&#39;];</code><br><code>months.splice(1, 0, &#39;Feb&#39;);</code><br><code>// inserts at index 1</code><br><code>console.log(months);</code><br><code>// expected output: Array [&quot;Jan&quot;, &quot;Feb&quot;, &quot;March&quot;, &quot;April&quot;, &quot;June&quot;]</code></p>
+<p><code>months.splice(4, 1, &#39;May&#39;);</code><br><code>// replaces 1 element at index 4</code><br><code>console.log(months);</code><br><code>// expected output: Array [&quot;Jan&quot;, &quot;Feb&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;]</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank" rel="noopener">官方细解splice() 方法</a></p>
+</div>    
+
+<p><strong>第四步计算图书数目，验证书名，时间过滤，自定义指令（焦点）的功能</strong><br>效果图如图所示:<br><img src="/image/vueanli/07.gif"><br>具体现实代码如图所示<br><img src="/image/vueanli/08.png"></p>
+<p>案例总结：</p>
+<div style="color: red">
+
+<ol>
+<li>计算组件的computed使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;div class&#x3D;&quot;total&quot;&gt;<br>      &lt;span&gt;图书总数：&lt;&#x2F;span&gt;<br>      &lt;span&gt;&#123;&#123;total&#125;&#125;&lt;&#x2F;span&gt;<br>    &lt;&#x2F;div&gt;<br><br>    computed: &#123;<br>      total: function()&#123;<br>        &#x2F;&#x2F; 计算图书的总数<br>        return this.books.length; &#x2F;&#x2F; 计算数组的长度<br>      &#125;<br>    &#125;,<br></code></pre></td></tr></table></figure></li>
+<li>过滤器是使用的一个封装的现成的方法。</li>
+<li>监听器的使用</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;label for&#x3D;&quot;name&quot;&gt;<br>              名称：<br>            &lt;&#x2F;label&gt;<br>            &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; v-model&#x3D;&#39;name&#39;&gt;<br>            &lt;button @click&#x3D;&#39;handle&#39; :disabled&#x3D;&quot;submitFlag&quot;&gt;提交&lt;&#x2F;button&gt;<br><br><br><br>      var vm &#x3D; new Vue(&#123;<br>      el: &#39;#app&#39;,<br>      data: &#123;<br>        flag: false,<br>        submitFlag: false,<br>        id: &#39;&#39;,<br>        name: &#39;&#39;,<br>        books: []<br>      &#125;,<br>      watch: &#123;<br>      	&#x2F;&#x2F;name 对应 data: &#123; name: &#39;&#39; &#125;; v-model&#x3D;&#39;name&#39; &#x3D;&#x3D; val  <br>         name: function(val) &#123;    <br>          &#x2F;&#x2F; 验证图书名称是否已经存在<br>          var flag &#x3D; this.books.some(function(item)&#123;<br>            return item.name &#x3D;&#x3D; val;<br>          &#125;);<br>          if(flag) &#123;<br>            &#x2F;&#x2F; 图书名称存在<br>            this.submitFlag &#x3D; true;<br>          &#125;else&#123;<br>            &#x2F;&#x2F; 图书名称不存在<br>            this.submitFlag &#x3D; false;<br>          &#125;<br>        &#125;<br>      &#125;,<br></code></pre></td></tr></table></figure>
+</div>
+</div>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckpf35kqn007kjov4dh1m7yj8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckpf35kqb0071jov4f7y2fai7/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            bootstrap项目上传到码云
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckpf35kk3000rjov42qqk9hxv/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">ES6模块化</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>

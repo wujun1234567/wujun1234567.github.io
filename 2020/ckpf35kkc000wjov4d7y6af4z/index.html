@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    HTML5andCSS3总复习 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-HTML5andCSS3总复习"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  HTML5andCSS3总复习
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckpf35kkc000wjov4d7y6af4z/" class="article-date">
+  <time datetime="2020-12-27T14:35:05.000Z" itemprop="datePublished">2020-12-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML5andCSS3%E6%80%BB%E5%A4%8D%E4%B9%A0/">HTML5andCSS3总复习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">5.3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">22 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4112020308,3805275000&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">CSS总复习</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+CSS总复习
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p  style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML5新特性</strong>
+</div>
+
+<p>HTML新特性</p>
+<p>1)增加了audio和video音频播放，抛弃了Flash<br>2)新增了canvas画布（绘画，制作动画（如小游戏开发等））<br>3)地理位置<br>4)增加了离线缓存<br>5)硬件加速<br>6)Web Socket (全双工通信)<br>7)增加了本地存储<br>8)新增了一些语义化标签</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML5的优劣势</strong>
+</div>
+
+<p>1.HTML5的优势</p>
+<ul>
+<li>提高可用性和改进用户的友好体验。</li>
+<li>新标签这将有助于开发人员定义重要的内容。</li>
+<li>可以给站点带来更多的多媒体元素(视频和音频)可以很好的替代FLASH和Silverlight。</li>
+<li>当涉及到网站的抓取和索引的时候，对于SEO很友好。</li>
+<li>大量应用于移动应用程序和游戏。</li>
+</ul>
+<p>2.HTML5的劣势</p>
+<ul>
+<li>HTML5本身还在发展中，它不是用户应用的最迫切需求，更多是厂商试图改变软件生态格局的战略需求。</li>
+<li>HTML5的兼容性受限于各大浏览器表现，例如微软的IE和fireforx之间存在很多差别。</li>
+<li>HTML5需要一个成熟完整的开发环境，目前还缺少。</li>
+<li>HTML5功能的暴增，浏览器必须有一个高效的图形引擎和脚本引擎。</li>
+<li>HTML5需要杀手级应用来吸引和引导用户升级浏览器，最终完成HTML5终端的部署。</li>
+</ul>
+</p>
+
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>网页布局标签</strong>
+</div>
+
+<ul>
+<li>header:首页</li>
+<li>nav:导航栏</li>
+<li>aside:侧边栏</li>
+<li>main:主体</li>
+<li>section:区块</li>
+<li>article:文章</li>
+<li>footer:页尾</li>
+</ul>
+<img src="/image/htmlSummary/43.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>语义化标签</strong>
+</div>
+
+<p>1)mark:高亮显示(行级)<br>2)details（描述）与summary(摘要):一般用于名词解释或用于封装一个区块等<br>3)meter:定义度量衡<br>属性：value/min/max<br>4)progress:进度条<br>属性：value/min/max<br>5)dialog:对话框或窗口<br>6)figure:用于对元素进行组合（一般用来组合一张图的标题、图片和图片描述等）</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML多媒体</strong>
+</div>
+
+<p><strong>1)audio</strong><br>播放音乐或音频。IE9以下版本不支持</p>
+<p>a)支持的格式<br>.mp3/.ogg/.wav</p>
+<p>b)属性<br>src:文件路径<br>autoplay:自动播放<br>loop:循环<br>controls:控制条<br>muted:静音<br>preload:预加载(当使用autoplay时，preload自动失效)</p>
+<p><strong>2)video</strong><br>加载视频，IE9以下版本不支持。<br>a)支持的格式<br>.mp4/.ogg/.webm<br>b)属性<br>src:文件路径<br>autoplay:自动播放<br>loop:循环<br>controls:控制条<br>muted:静音<br>preload:预加载(当使用autoplay时，preload自动失效)<br>width:宽度<br>height:高度<br>poster:海报</p>
+<p><strong>3)embed</strong><br>嵌入内容或加载插件</p>
+<p>属性:<br>src:文件路径<br>width:宽度<br>height:高度<br>type:类型</p>
+<p><strong>4)canvas</strong><br>画布:是一个容器元素<br>注意：<br>a.单独使用canvas没有意义，它必须结合JavaScript使用。它具体功能体现是通过JavaScript体现来的<br>b.canvas的宽高最好不要通过css实现，而是直接使用标签属性width和height实现。</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML5常用属性</strong>
+</div>
+
+<p>HTML5常用属性：</p>
+<p>1)contentEditable<br>将标签转换为客编辑状态。可用于所有标签。它的值有true/false。<br>默认值为false,不可以编辑</p>
+<p>2)hidden<br>对元素进行隐藏。一般用来传值或当某个条件成立，执行内容显示。默认值为hidden。</p>
+<p>3)data-*<br>用于存储页面或应用程序的私有自定义数据。一般用于传值。</p>
+<p>4)multiple<br>规定输入域中可选择多个内容。用于表单组件中，如file/select.</p>
+<p>5)required<br>约束表单元素在提交前必须输入值。用于表单组件中，需要结合提交按钮使用。</p>
+<p>6)pattern<br>用于验证输入字段的模式。用于表单组件中，需要结合提交按钮使用</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML5表单组件</strong>
+</div>
+
+<p>表单组件<br>1)color: 颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;form action&#x3D;&quot;&quot;&gt;<br>      &lt;input type&#x3D;&quot;color&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;111<br>  &lt;&#x2F;form&gt;<br></code></pre></td></tr></table></figure>
+<p>2)email: 邮箱<br>3)tel: 电话号码<br>4)url: 网址<br>5)number: 数字<br>6)range: 范围<br>7)search: 搜索<br>8)date: 日期<br>9)datatime: 日期时间<br>10)datatime-load: 本一日期时间<br>11)year: 年份<br>12)month: 月份<br>13)time: 时间</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>表单属性</strong>
+</div>
+
+<p>1）formaction:修改action数据提交的地方<br>2）formenctype:修改表单请求的类型<br>3）formmethod:修改数据提交的方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;form action&#x3D;&quot;&quot; method&#x3D;&quot;GET&quot;&gt;<br>      &lt;input type&#x3D;&quot;color&quot; name&#x3D;&quot;&quot; formmethod&#x3D;&quot;POST&quot; id&#x3D;&quot;&quot;&gt;<br>      &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;<br>  &lt;&#x2F;form&gt;<br></code></pre></td></tr></table></figure>
+<p>4）form:设置表单元素属于哪个表单<br>5）novalidate:不验证</p>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>input属性</strong>
+</div>
+
+<p>1)autocomplete:自动完成<br>用来帮助用户输入，每一次输入的内容，浏览器是否保存输入的值，以备将来使用。<br>值有: on / off ，默认为 on<br>为了保护敏感数据(如用户账号、密码等)，避免本地浏览器对他们不安全存储，一般需要关闭。<br>2)autofocus:自动获取焦点<br>3)step:步长<br>4)multiple:多选<br>5)pattern:正则匹配<br>6)placeholder:输入提示<br>7)required:必须输入</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3新特性</strong>
+</div>
+
+<p>1)选择器<br>2)阴影<br>3)形状转化（2D &lt;-&gt; 3D）<br>4)变形<br>5)动画(过渡动画、帧动画)<br>6)边框<br>7)多重背景<br>8)反射<br>9)文字<br>10)颜色(rgba/hsl/hsla)<br>11)滤镜(filter)<br>12)弹性布局<br>13)多列布局<br>14)盒模型<br>15)Web字体<br>16)媒体查询</p>
+</p>
+
+
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3属性前缀</strong>
+</div>
+CSS3不是属于浏览器或同一浏览器的不同版本都支持，所以需要兼容处理，通常的做法就是加厂商前缀
+
+<p>1)主流浏览器内核<br>a)Trident: IE内核<br>b)Webkit: Chrome和Safari内核<br>c)Gecke: FireFox内核<br>d)Blink: Chrome和Opera内核</p>
+<p>Tip(技巧)：<br>目前国内的浏览器大多都是双内核的(IE内核Chrome内核)</p>
+<p>2)厂商前缀<br>IE: -ms-<br>Chrome&amp;Safari: -webkit-<br>FireFox: -moz-<br>Opera: -o-</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3选择器</strong>
+</div>
+
+<p>丰富选择的目的，在标签中减少class和id属性的使用</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>属性选择器</strong>
+</div>
+
+
+
+<p>具有class的属性颜色为红色<br>p[class]{<br>    color:red<br>}</p>
+<p>class属性等于content的标签颜色为红色<br>p[class=content]{<br>    color:red<br>}</p>
+<p>class属性以content开头的标签颜色为红色<br>p[class^=content]{<br>    color:red<br>}</p>
+<p>class属性以content结尾的标签颜色为红色<br>p[class$=content]{<br>    color:red<br>}</p>
+<p>class属性包含p的标签颜色为红色<br>p[class$=p]{<br>    color:red<br>}</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>结构性伪类</strong>
+</div>
+
+
+<p>1）:root 匹配html标签，body选择器效果一样<br>:root {<br>    background-color: red;<br>}  </p>
+<p>2)子元素选择 匹配父元素中连续的子元素</p>
+<p>:first-child: 第一个子元素<br>:last-child: 最后一个子元素<br>:nth-last-child(n): 倒数第n个元素<br>:nth-child(n): 第几个元素</p>
+<p>3) nth-of-type类:用于匹配父元素中兄弟子元素，可以用于子元素非连续的情况<br>   :nth-of-type(n)<br>   :nth-last-of-type(n)</p>
+<p>4).其他</p>
+<p>1) :only-child     父元素中仅有一个子元素</p>
+<p>2) :only-of-type   父元素中仅有一个兄弟元素<br>:only-of-type 代表了任意一个元素，这个元素没有其他相同类型的兄弟元素(可以有多个兄弟元素)。</p>
+<p>3) :empty          没有子元素，包括文本元素，即查找空元素 </p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>目标伪类</strong>
+</div>
+
+<p>目标伪类<br>:target :匹配URL指向的元素</p>
+<p>点击a标签jump1，跳转到p标签的id=jump1的位置，同时字体颜色变为red</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain">p:target &#123;<br>	color:red<br>&#125;<br><br>&lt;a href&#x3D;&quot;#jump1&quot;&gt;jump1&lt;&#x2F;a&gt;<br>&lt;a href&#x3D;&quot;#jump2&quot;&gt;jump2&lt;&#x2F;a&gt;<br><br>&lt;p id&#x3D;&quot;jump1&quot;&gt;11111&lt;&#x2F;p&gt;<br>&lt;p id&#x3D;&quot;jump2&quot;&gt;22222&lt;&#x2F;p&gt;<br></code></pre></td></tr></table></figure>
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>UI元素状态伪类</strong>
+</div>
+
+<p>:enable 匹配所有用户界面(form表单)中处于可用状态的元素<br>:disable 匹配所有用户界面(form表单)中处于不可用状态的元素<br>:checked 匹配所有用户界面(form表单)中处于选中状态的元素(只在Opera中有效)<br>::selection 匹配元素中被用户选中或处于高亮状态的部分</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>否定伪类</strong>
+</div>
+
+<p>:not(p)<br>container下面的非p标签颜色都是红色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain">.container :not(p)&#123;<br>	color:red;<br>&#125;<br><br>&lt;div class&#x3D;&quot;container&quot;&gt;<br>	&lt;p&gt;111&lt;&#x2F;p&gt;<br>	&lt;p&gt;111&lt;&#x2F;p&gt;<br>	&lt;span&gt;222&lt;&#x2F;span&gt;<br>&lt;&#x2F;div&gt;<br></code></pre></td></tr></table></figure>
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>通用兄弟元素选择器</strong>
+</div>
+
+<p>通用兄弟元素选择器: ~</p>
+<p>div2的字体变为红色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain">.div1~.div2 &#123;<br>          color: red;<br>      &#125;<br><br> &lt;div class&#x3D;&quot;container&quot;&gt;<br>          &lt;div class&#x3D;&quot;div1&quot;&gt;1111&lt;&#x2F;div&gt;<br>          &lt;div class&#x3D;&quot;div2&quot;&gt;1111&lt;&#x2F;div&gt;<br>          &lt;div class&#x3D;&quot;div3&quot;&gt;1111&lt;&#x2F;div&gt;<br>      &lt;&#x2F;div&gt;<br></code></pre></td></tr></table></figure>
+
+
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3文本</strong>
+</div>
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文本阴影((IE9以上支持))</strong>
+</div>
+
+<p>文本阴影：<br>text-shadow: 水平偏移距离 垂直偏移距离 模糊距离 [阴影尺寸]  [颜色]  [inset] </p>
+<img src="/image/htmlSummary/44.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文本自动换行(主流浏览器都支持)</strong>
+</div>
+
+<p>word-wrap: normal | break-word</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>单词拆分(主流浏览器都支持)</strong>
+</div>
+
+<p>单词拆分<br>word-break: normal | break-all | keep-all;</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文本拆分(所有主流浏览器都不支持)</strong>
+</div>
+
+<p>text-wrap: normal | none | unrestricted | suppress;</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文本溢出(重要)</strong>
+</div>
+
+<p>a)单文本溢出(重要)<br>text-overflow: clip | ellipsis | string;</p>
+<p>处理文字溢出样式：</p>
+<p><code>width: px/%/em/rem....;</code><br><code>white-space: nowrap; //不允许换行</code><br><code>-ms-text-overflow:ellipsis; //处理IE兼容</code><br><code>text-overflow:ellipsis; //隐藏的部分用省略号表示</code><br><code>overflow:hidden;    //溢出隐藏</code></p>
+<img src="/image/htmlSummary/45.png" style="width: 1360">
+
+
+
+<p>b)多行文本溢出(IE9以下版本不支持，主要是谷歌支持)</p>
+<p><code>width: px/%/em/rem....;</code><br><code>display: -webkit-box;</code><br><code>-webkit-box-orient: vertical;</code><br><code>-webkit-line-clamp: 行数</code><br><code>white-space: wrap; //允许换行</code><br><code>overflow:hidden;    //溢出隐藏</code></p>
+<img src="/image/htmlSummary/46.png" style="width: 1360">
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3边框</strong>
+</div>
+
+
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>圆角边框(重要)</strong>
+</div>
+
+<p>border-radius: 1-4 length|% / 1-4 length|%;</p>
+<p>border-radius:2em;<br><mark>等价于</mark><br>border-top-left-radius:2em;<br>border-top-right-radius:2em;<br>border-bottom-right-radius:2em;<br>border-bottom-left-radius:2em;</p>
+<img src="/image/htmlSummary/47.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>边框阴影(IE9以上支持)</strong>
+</div>
+
+<p>box-shadow: 水平偏移距离 垂直偏移距离 模糊距离 [阴影尺寸]  [颜色]  [inset] </p>
+<img src="/image/htmlSummary/48.png" style="width: 1360">
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>边框图片(IE11及以后的版本支持)</strong>
+</div>
+
+<p>border-image 属性是一个简写属性，用于设置以下属性：</p>
+<p>border-image-source<br>border-image-slice<br>border-image-width<br>border-image-outset<br>border-image-repeat</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">border-image-source</td>
+<td align="left">用在边框的图片的路径</td>
+</tr>
+<tr>
+<td align="left">border-image-slice</td>
+<td align="left">图片边框向内偏移。</td>
+</tr>
+<tr>
+<td align="left">border-image-width</td>
+<td align="left">图片边框的宽度。</td>
+</tr>
+<tr>
+<td align="left">border-image-outset</td>
+<td align="left">边框图像区域超出边框的量。</td>
+</tr>
+<tr>
+<td align="left">border-image-repeat</td>
+<td align="left">图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。</td>
+</tr>
+</tbody></table>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3背景</strong>
+</div>
+
+</p>
+
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>多重背景</strong>
+</div>
+
+<p>多重背景: 多张图片叠加的效果<br>background: 背景色 背景图片 平铺方式 位置, 背景色 背景图片 平铺方式 位置…</p>
+<p>定义和用法<br>background 简写属性在一个声明中设置所有的背景属性。</p>
+<p>可以设置如下属性：</p>
+<ul>
+<li>background-color</li>
+<li>background-position</li>
+<li>background-size: 固定长度 | 百分值 | cover | contain;</li>
+<li>background-repeat:repeat | no-repeat;</li>
+<li>background-origin:  border-box | padding-box | content-box;</li>
+<li>background-clip: border-box | padding-box | content-box;</li>
+<li>background-attachment</li>
+<li>background-image</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">background-color</td>
+<td align="left">规定要使用的背景颜色。</td>
+</tr>
+<tr>
+<td align="left">background-position</td>
+<td align="left">规定背景图像的位置。</td>
+</tr>
+<tr>
+<td align="left">background-size</td>
+<td align="left">规定背景图片的尺寸。</td>
+</tr>
+<tr>
+<td align="left">background-repeat</td>
+<td align="left">规定如何重复背景图像。</td>
+</tr>
+<tr>
+<td align="left">background-origin</td>
+<td align="left">规定背景图片的定位区域。</td>
+</tr>
+<tr>
+<td align="left">background-clip</td>
+<td align="left">规定背景的绘制区域。</td>
+</tr>
+<tr>
+<td align="left">background-attachment</td>
+<td align="left">规定背景图像是否固定或者随着页面的其余部分滚动。</td>
+</tr>
+<tr>
+<td align="left">background-image</td>
+<td align="left">规定要使用的背景图像。</td>
+</tr>
+<tr>
+<td align="left">inherit</td>
+<td align="left">规定应该从父元素继承 background 属性的设置。</td>
+</tr>
+</tbody></table>
+<img src="/image/htmlSummary/49.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3颜色</strong>
+</div>
+
+<p>1)RGBA</p>
+<p>background-color:rgba(red, green, blue, alpha);</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">red</td>
+<td align="left">定义红色值，取值范围为 0 ~ 255，也可以使用百分比 0% ~ 100%。</td>
+</tr>
+<tr>
+<td align="left">green</td>
+<td align="left">定义绿色值，取值范围为 0 ~ 255，也可以使用百分比 0% ~ 100%。</td>
+</tr>
+<tr>
+<td align="left">blue</td>
+<td align="left">定义蓝色值，取值范围为 0 ~ 255，也可以使用百分比 0% ~ 100%。</td>
+</tr>
+<tr>
+<td align="left">alpha</td>
+<td align="left">透明度    定义透明度 0（完全透明） ~ 1（完全不透明）</td>
+</tr>
+</tbody></table>
+<p>2)HSL<br>hsl(h,s,l)<br>h:色调    取值范围: 0-360<br>s:饱和度  取值范围: 0-100%<br>l:亮度    取值范围: 0-100%</p>
+<p>3)HSLA<br>hsl(h,s,l,a)<br>h:色调      取值范围: 0-360<br>s:饱和度    取值范围: 0-100%<br>l:亮度      取值范围: 0-100%<br>a:不透明度  取值范围: 0-1的一个小数</p>
+</p>
+
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>opacity</strong>
+</div>
+
+<p>opacity<br>调整元素的不透明度，大多数情况下用于做元素的遮罩效果。取值范围: 0-1的一个小数<br>所有浏览器都支持 opacity 属性。<br>注释：IE8 以及更早的版本支持替代的 filter 属性。例如：filter:Alpha(opacity=50)。</p>
+<img src="/image/htmlSummary/50.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3渐变</strong>
+</div>
+
+<div style="text-align: center; color: red">
+    <strong>1)线性渐变</strong>
+</div>
+
+<p>background: linear-gradient(方向或角度,颜色1 百分比,颜色2 百分比,….)</p>
+<p>方向:<br>to left :从右向左渐变<br>to right:从左向右渐变<br>to top  :从下向上渐变<br>to bottom :从上向下渐变<br>to top left:从右下角向左上角渐变<br>to top right:从左下角向右上角渐变<br>to bottom left:从右上角向左下角渐变<br>to bottom right:从左上角向右下角渐变</p>
+<p>角度:<br>比如45度角，应该为： 45deg</p>
+<p>颜色取值:<br>1)表示颜色的单词<br>2)16进制颜色<br>3)表示颜色的函数(rgb()/rgba()/hsl()/hsla()…..)</p>
+<div style="text-align: center; color: red">
+    <strong>2)径向渐变（沿半径方向渐变）</strong>
+</div>
+
+
+<p>径向渐变与线性渐变类似，不同之处在于它们从中心点放射出去。您可以指定该中心点在哪里。您也可以将它们设置为圆形或椭圆形。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Using_CSS_gradients" target="_blank" rel="noopener">径向渐变（沿半径方向渐变）</a></p>
+<div style="text-align: center; color: red">
+    <strong>3)文字渐变</strong>
+</div>
+
+
+<p>html代码 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;p&gt;111111111你说你从哪时长是参数111111111&lt;&#x2F;p&gt;<br></code></pre></td></tr></table></figure>
+
+<p>css代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">p &#123;<br>           font-size: 30px;<br>           background-image: -webkit-linear-gradient(bottom, red, blue, green);<br><br>           -webkit-background-clip: text;<br><br>           -webkit-text-fill-color: transparent;<br>       &#125;<br></code></pre></td></tr></table></figure>
+<p>效果图</p>
+<img src="/image/htmlSummary/51.png" style="width: 1360">
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>box-sizing</strong>
+</div>
+
+<p>box-sizing: content-box|border-box|inherit;</p>
+<p>box-sizing:border-box<br>为元素设定的宽度和高度决定了元素的边框盒。<br>就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。<br>通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>CSS3动画 transform</strong>
+</div>
+
+<p>定义和用法<br>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">none</td>
+<td align="left">定义不进行转换。</td>
+</tr>
+<tr>
+<td align="left">matrix(n,n,n,n,n,n)</td>
+<td align="left">定义 2D 转换，使用六个值的矩阵。</td>
+</tr>
+<tr>
+<td align="left">matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</td>
+<td align="left">定义 3D 转换，使用 16 个值的 4x4 矩阵。</td>
+</tr>
+<tr>
+<td align="left">translate(x,y)</td>
+<td align="left">定义 2D 转换。</td>
+</tr>
+<tr>
+<td align="left">translate3d(x,y,z)</td>
+<td align="left">定义 3D 转换。</td>
+</tr>
+<tr>
+<td align="left">translateX(x)</td>
+<td align="left">定义转换，只是用 X 轴的值。</td>
+</tr>
+<tr>
+<td align="left">translateY(y)</td>
+<td align="left">定义转换，只是用 Y 轴的值。</td>
+</tr>
+<tr>
+<td align="left">translateZ(z)</td>
+<td align="left">定义 3D 转换，只是用 Z 轴的值。</td>
+</tr>
+<tr>
+<td align="left">scale(x,y)</td>
+<td align="left">定义 2D 缩放转换。</td>
+</tr>
+<tr>
+<td align="left">scale3d(x,y,z)</td>
+<td align="left">定义 3D 缩放转换。</td>
+</tr>
+<tr>
+<td align="left">scaleX(x)</td>
+<td align="left">通过设置 X 轴的值来定义缩放转换。</td>
+</tr>
+<tr>
+<td align="left">scaleY(y)</td>
+<td align="left">通过设置 Y 轴的值来定义缩放转换。</td>
+</tr>
+<tr>
+<td align="left">scaleZ(z)</td>
+<td align="left">通过设置 Z 轴的值来定义 3D 缩放转换。</td>
+</tr>
+<tr>
+<td align="left">rotate(angle)</td>
+<td align="left">定义 2D 旋转，在参数中规定角度。</td>
+</tr>
+<tr>
+<td align="left">rotate3d(x,y,z,angle)</td>
+<td align="left">定义 3D 旋转。</td>
+</tr>
+<tr>
+<td align="left">rotateX(angle)</td>
+<td align="left">定义沿着 X 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td align="left">rotateY(angle)</td>
+<td align="left">定义沿着 Y 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td align="left">rotateZ(angle)</td>
+<td align="left">定义沿着 Z 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td align="left">skew(x-angle,y-angle)</td>
+<td align="left">定义沿着 X 和 Y 轴的 2D 倾斜转换。</td>
+</tr>
+<tr>
+<td align="left">skewX(angle)</td>
+<td align="left">定义沿着 X 轴的 2D 倾斜转换。</td>
+</tr>
+<tr>
+<td align="left">skewY(angle)</td>
+<td align="left">定义沿着 Y 轴的 2D 倾斜转换。</td>
+</tr>
+<tr>
+<td align="left">perspective(n)</td>
+<td align="left">为 3D 转换元素定义透视视图。</td>
+</tr>
+</tbody></table>
+<ol>
+<li><p>translate:   位移效果<br>translate(x,y) 沿X Y轴位移。注意：X正轴向右，Y的正轴向下<br>translateX(x)  沿X轴方向<br>translateY(y)  沿Y轴方向</p>
+</li>
+<li><p>scale       缩放效果<br>scale(x,y)     进行大小的缩放<br>transform: scale(.5, .5);<br>div的大小缩小了一倍，变为了100px x 100px的盒子</p>
+</li>
+</ol>
+<p>transform: scale(2, 2);<br>div的大小扩大了一倍，变为了400px x 400px 的盒子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain">  &lt;style&gt;<br>        div &#123;<br>            width: 200px;<br>            height: 200px;<br>            background-color: aquamarine;<br>            transform: scale(.5, .5);<br>        &#125;<br>    &lt;&#x2F;style&gt;<br>&lt;&#x2F;head&gt;<br><br>&lt;body&gt;<br>    &lt;div&gt;&lt;&#x2F;div&gt;<br>&lt;&#x2F;body&gt;<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>rotate:   旋转效果<br>rotate(angle)<br>定义 2D 旋转，在参数中规定角度,顺时针旋转xxxdeg。<br>沿着顺时针旋转了10度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain">   div &#123;<br>            width: 200px;<br>            height: 200px;<br>            margin: 300px auto;<br>            background-color: aquamarine;<br>            transform: rotate(10deg);<br>        &#125;<br>    &lt;&#x2F;style&gt;<br>&lt;&#x2F;head&gt;<br><br>&lt;body&gt;<br>    &lt;div&gt;&lt;&#x2F;div&gt;<br>&lt;&#x2F;body&gt;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>skew:   变形效果<br>skew(x-angle,y-angle)<br>定义沿着 X 和 Y 轴的 2D 倾斜转换。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain"> div &#123;<br>            width: 200px;<br>            height: 200px;<br>            margin: 300px auto;<br>            background-color: aquamarine;<br>            transform: skew(30deg,30deg);<br>        &#125;<br>    &lt;&#x2F;style&gt;<br>&lt;&#x2F;head&gt;<br><br>&lt;body&gt;<br>    &lt;div&gt;&lt;&#x2F;div&gt;<br>&lt;&#x2F;body&gt;<br></code></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>matrix(待写):<br>matrix(n,n,n,n,n,n)<br>定义 2D 转换，使用六个值的矩阵。</li>
+</ol>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>transform-origin</strong>
+</div>
+transform-origin: 调整元素的基点
+定义和用法
+transform-origin 属性允许您改变被转换元素的位置。
+
+<p>2D 转换元素能够改变元素 x 和 y 轴。3D 转换元素还能改变其 Z 轴。</p>
+<p>语法<br>transform-origin: x-axis y-axis z-axis;</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">x-axis</td>
+<td align="left">定义视图被置于 X 轴的何处。可能的值：left center right length %</td>
+</tr>
+<tr>
+<td align="left">y-axis</td>
+<td align="left">定义视图被置于 Y 轴的何处。可能的值：top center bottom length %</td>
+</tr>
+<tr>
+<td align="left">z-axis</td>
+<td align="left">定义视图被置于 Z 轴的何处。可能的值：length</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs plain">  .content &#123;<br>            width: 400px;<br>            height: 400px;<br>            margin: 300px auto;<br>            border: 1px solid rgb(230, 7, 7);<br>        &#125;<br>        .box &#123;<br>            width: 200px;<br>            height: 200px;<br>            transform: rotate(30deg);<br>            background-color: aquamarine;<br>            transform-origin: 0 0;<br>        &#125;<br>    &lt;&#x2F;style&gt;<br>&lt;&#x2F;head&gt;<br>&lt;body&gt;<br>    &lt;div class&#x3D;&quot;content&quot;&gt;<br>        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;&#x2F;div&gt;<br>    &lt;&#x2F;div&gt;<br>&lt;&#x2F;body&gt;<br></code></pre></td></tr></table></figure>
+
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>perspective</strong>
+</div>
+
+<p>perspective:让子元素获得透视效果<br>在父元素里面写:<br>perspective:length|none;</p>
+<p>在子元素写<br>transform: rotateX(45deg);</p>
+<p>主流浏览器都不支持，<br>苹果，谷歌要加-webkit-,或在长度后加单位<br>火狐浏览器要加-moz-,或在长度后加单位<br>IE浏览器要加-ms-,或在长度后加单位<br>欧鹏浏览器要加-o-,或在长度后加单位</p>
+<img src="/image/htmlSummary/52.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>transform-style 3D 效果</strong>
+</div>
+
+<p>transform-style<br>在3D空间中呈现被嵌套的元素(必须与 transform 属性一同使用)。</p>
+<p>transform-style: flat (子元素将不保留其 3D 位置) | perserve-3d (子元素将保留其 3D 位置) ;</p>
+<p>Firefox 支持 transform-style 属性。<br>Chrome、Safari 和 Opera 支持替代的 -webkit-transform-style 属性。</p>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>rotateZ (待写一个正方形) </strong>
+</div>
+
+<p>rotateZ() 函数定义了一个转换，它可以让一个元素围绕横Z轴旋转，而不会导致进行变形。<br>rotateZ() 引起的旋转量由<angle>。指定如果为正，则顺时针方向移动;如果为负，则逆时针方向移动。</p>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>过渡动画transition</strong>
+</div>
+
+<ol>
+<li><p>常规用法:<br>transition-property<br>transition-duration<br>transition-timing-function<br>transition-delay<br>注释：请始终设置 transition-duration 属性，否则时长为 0，就不会产生过渡效果。</p>
+</li>
+<li><p>简洁(复合)用法:</p>
+</li>
+</ol>
+<p>transition: property-name-list<code>|</code>all duration  timing-fuction delay;</p>
+<p>a)可以使用的属性有:<br>i)颜色:<br>color background-color border-color outline-color<br>ii)位置:<br>background-position left right top bottom<br>iii)长度:<br>max-height min-height max-width min-width height width<br>border-width margin padding outline-width outline-offset<br>font-size line-height text-index vertical-align<br>border-spacing letter-spacing word-spacing<br>iv)数字:<br>opacity visibility z-index font-weight zoom<br>v)组合:<br>text-shadow transform box-shadow clip<br>vi)其他<br>gradient</p>
+<p>b)duration: 动画持续时间，一般以秒(s)或者毫秒(ms)为单位<br>c)timing-function:动画函数<br>i)linear:匀速<br>ii)ease:变速（先慢后快，最后再慢）<br>iii)ease-in:变速（由慢到快）<br>iv)ease-out:变速（由快到慢）<br>v)ease-in-out:变速（慢速开始，慢速结束）<br>vi)cubic-bezier(n,n,n):自行设定变速，n的值在0-1之间</p>
+<p>d)delay:动画延时时间，一般以秒(s)或毫秒(ms)为单位</p>
+<p>语法<br>transition: property duration timing-function delay;</p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">transition-property</td>
+<td align="left">规定设置过渡效果的 CSS 属性的名称。</td>
+</tr>
+<tr>
+<td align="left">transition-duration</td>
+<td align="left">规定完成过渡效果需要多少秒或毫秒。</td>
+</tr>
+<tr>
+<td align="left">transition-timing-function</td>
+<td align="left">规定速度效果的速度曲线。</td>
+</tr>
+<tr>
+<td align="left">transition-delay</td>
+<td align="left">定义过渡效果何时开始。</td>
+</tr>
+</tbody></table>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>animation动画</strong>
+</div>
+
+<p>关键帧动画<br>步骤:<br>1)设置关键帧</p>
+<p>a)如果只有两个关键帧<br>@keyframes 动画名 {<br>    0%: {样式表}<br>    100%: {样式表}<br>}<br>或:<br>@keyframes 动画名 {<br>    from: {样式表}<br>    to: {样式表}<br>}<br>b)如果是多个关键帧<br>@keyframes 动画名 {<br>    0%: {样式表}<br>    25%: {样式表}<br>    60%: {样式表}<br>    70%: {样式表}<br>    …..<br>    100%: {样式表}<br>}<br>注意:这里的百分比一般是升序值，可以是0%-100%之间的任意值，也可以是倒序的。</p>
+<p>2)实施动画<br>a)常规用法<br>animation-name: 来自于@keyframes定义的动画名</p>
+<p>animation-duration 动画持续时间，一般以秒(s)或者毫秒(ms)为单位(默认为0)</p>
+<p>animation-timing-function 动画函数<br>i)linear:匀速(默认值)<br>ii)ease:变速（先慢后快，最后再慢）<br>iii)ease-in:变速（由慢到快）<br>iv)ease-out:变速（由快到慢）<br>v)ease-in-out:变速（慢速开始，慢速结束）<br>vi)cubic-bezier(n,n,n):自行设定变速，n的值在0-1之间</p>
+<p>animation-delay 动画延时时间，一般以秒(s)或毫秒(ms)为单位</p>
+<p>animation-iteration-count: 动画循环播放的次数<br>1)number: 按设定次数循环播放(默认次数为1次)<br>2)infinite: 一直循环播放</p>
+<p>animation-direction: 动画播放完是否反向播放<br>1)normal: 不反向(默认值)<br>2)alternate:反向</p>
+<p>animation-play-state:动画播放或停止播放<br>1)paused: 停止播放<br>2)running:播放(默认值)</p>
+<p>b)简洁用法<br>animation: name duration timing-functon delay iteration-count direction;</p>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>UI元素状态伪类</strong>
+</div>
+
+<p>网站开发策略：先整体再局部，至顶向下，逐步细化</p>
+</p>
+
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>UI元素状态伪类</strong>
+</div>
+
+<p>网站开发策略：先整体再局部，至顶向下，逐步细化</p>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>UI元素状态伪类</strong>
+</div>
+
+<p>网站开发策略：先整体再局部，至顶向下，逐步细化</p>
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>UI元素状态伪类</strong>
+</div>
+
+<p>网站开发策略：先整体再局部，至顶向下，逐步细化</p>
+</p>
+
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckpf35kkc000wjov4d7y6af4z/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5andCSS3%E6%80%BB%E5%A4%8D%E4%B9%A0/" rel="tag">HTML5andCSS3总复习</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckpf35ks6008xjov4emhgeh3t/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            最近的学习感悟
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckpf35kk9000tjov4ceoidihw/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Git和Github入门</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wujun1234567.github.io/"/>
-  <updated>2021-02-21T08:54:53.192Z</updated>
+  <updated>2021-06-02T06:24:52.426Z</updated>
   <id>https://wujun1234567.github.io/</id>
   
   <author>
@@ -17,9 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>最后一篇博客</title>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kvz00bljov40jzfe66y/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kvz00bljov40jzfe66y/</id>
+    <published>2021-06-02T06:00:17.000Z</published>
+    <updated>2021-06-02T06:24:52.426Z</updated>
+    
+    <content type="html"><![CDATA[<div style="background-color: #CCFF99; font-size: 18px;font-weight: bold; "><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4112020308,3805275000&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;margin-top: 15px;float: left;"><div style="float: left;margin:20px 15px;width: 500px;height: 137px"><h4 style="padding: 0;margin: 0;">新的挑战以开始</h4><div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">新的挑战以开始，我准备好了</div></div><a id="more"></a><br><br><br><br><br><br><hr><div style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 16px"><div style="text-align: center; color: red">    <strong>最后一篇博客</strong></div><p>最近找工作的事情也差不多结束了。聊一聊最近的求职经历吧。</p><p>    来深圳跑了三家公司，第一家是一个外包公司，自己笔试题都没有过。这一家在福田区我本来也没打算过得，听大佬们说外包公司出去以后不好找工作。这一家我是想了解一下面试的过程是什么样子的。</p><p>    第二家在宝塔区，她给我的题我自己感觉是属于中高级程序员做的题目了。能力实在有限，就写出来2道。要我周三来上机笔试一下，通过就是6k,没有通过就是2个月的2k培训期，这个我肯定不干的。</p><p>    当天下午还有一家，我直接没去了，自己回家看点面试题就好了。<p>第三家在南山区，是一个朋友内推过去的。终于让我看到一个正常一点，简单一点面试题了，面试的时候很顺利。<br>公司当天就确定下来了。</p></p><p>    不过有一道题让我有点扎心了，问一个字符串的对象方法有哪一些？substring  length  charAt  toupperCase 我觉得这不是字符串都有的吗。 回来的时候查了一下资料，没错啊。然后就发现问题了，方法不是要用括号调用的吗。 length是不需要方法调用的。总是粗心看题造成的。</p><p>    我完成了自己自学前端找工作的约定了，这也只是人生的第一步。最近自己一直跑公司找工作，让我明白，每个人都得适应人生的每一个阶段。自己也在不知不觉中慢慢适应了。</p><p>    大学阶段就得好好学习，找到自己感兴趣的东西。毕业就得慢慢适应工作，在工作中好好学习，不能上班摸鱼。</p><p>    这个博客以后不会更了。阿里的域名越到后面越贵，每个写个博客也很麻烦。我以后就用CSDN上的博客了。</p><p>以后有能力的话，自己做一个博客，专门记录生活的吧。</p><p>人生总是充满挑战，目前才是完成了第一个，我希望后面的挑战越来越有趣。</p></div></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div style=&quot;background-color: #CCFF99; font-size: 18px;font-weight: bold; &quot;&gt;
+&lt;img src=&quot;https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4112020308,3805275000&amp;fm=26&amp;gp=0.jpg&quot; style=&quot;width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;&quot;&gt;
+&lt;div style=&quot;float: left;margin:20px 15px;width: 500px;height: 137px&quot;&gt;
+&lt;h4 style=&quot;padding: 0;margin: 0;&quot;&gt;新的挑战以开始&lt;/h4&gt;
+&lt;div style=&quot;padding: 0;margin: 0;font-size: 12px;line-height: 30px&quot;&gt;
+新的挑战以开始，我准备好了
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="学习总结" scheme="https://wujun1234567.github.io/categories/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="不会更新博客了" scheme="https://wujun1234567.github.io/tags/%E4%B8%8D%E4%BC%9A%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%E4%BA%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS里的面试题判断数据类型的三种方式</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nf003rnkv4g3sz2j85/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nf003rnkv4g3sz2j85/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmr003hjov4c2qegca2/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmr003hjov4c2qegca2/</id>
     <published>2021-02-21T08:54:53.000Z</published>
     <updated>2021-02-21T08:54:53.192Z</updated>
     
@@ -33,8 +66,8 @@
   
   <entry>
     <title>JS里的面试题箭头函数和普通函数的区别</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ok004hnkv48456gcwc/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ok004hnkv48456gcwc/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35knk0047jov4abr32ino/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35knk0047jov4abr32ino/</id>
     <published>2021-02-21T08:04:14.000Z</published>
     <updated>2021-02-21T08:04:14.212Z</updated>
     
@@ -48,8 +81,8 @@
   
   <entry>
     <title>JS里的面试题把字符串的字母取反</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nv0044nkv4d2bqhrts/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nv0044nkv4d2bqhrts/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kn0003sjov4cgcg36wr/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kn0003sjov4cgcg36wr/</id>
     <published>2021-02-21T08:03:28.000Z</published>
     <updated>2021-02-21T08:03:28.351Z</updated>
     
@@ -63,8 +96,8 @@
   
   <entry>
     <title>JS里的算法题洗牌算法</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19my003ankv40c4pa5u8/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19my003ankv40c4pa5u8/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35km1002yjov4cpcigmf1/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35km1002yjov4cpcigmf1/</id>
     <published>2021-02-20T12:36:03.000Z</published>
     <updated>2021-02-20T12:56:45.866Z</updated>
     
@@ -96,8 +129,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>JS里的面试题随机排序</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ox0050nkv41zqa3og1/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ox0050nkv41zqa3og1/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kno004fjov450vj7zf3/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kno004fjov450vj7zf3/</id>
     <published>2021-02-20T08:04:24.000Z</published>
     <updated>2021-02-20T12:34:29.548Z</updated>
     
@@ -129,8 +162,8 @@ JS里的面试题随机排序
   
   <entry>
     <title>JS里的面试题逻辑与逻辑或运算</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19op004nnkv4elggfhp7/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19op004nnkv4elggfhp7/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35knm0049jov44a0khygl/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35knm0049jov44a0khygl/</id>
     <published>2021-02-20T07:46:59.000Z</published>
     <updated>2021-02-20T07:46:59.853Z</updated>
     
@@ -144,8 +177,8 @@ JS里的面试题随机排序
   
   <entry>
     <title>JS里的面试题深拷贝和浅拷贝</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19oo004knkv4hpn1bzvp/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19oo004knkv4hpn1bzvp/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kn3003vjov435cn8730/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kn3003vjov435cn8730/</id>
     <published>2021-02-20T02:31:26.000Z</published>
     <updated>2021-02-20T02:31:26.723Z</updated>
     
@@ -159,8 +192,8 @@ JS里的面试题随机排序
   
   <entry>
     <title>JS里的面试题千分符</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19of004bnkv49fc90b7h/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19of004bnkv49fc90b7h/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmp003ejov43pne0fc2/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmp003ejov43pne0fc2/</id>
     <published>2021-02-20T02:28:00.000Z</published>
     <updated>2021-02-20T02:29:12.956Z</updated>
     
@@ -192,8 +225,8 @@ JS里的面试题千分符
   
   <entry>
     <title>JS里的面试题数组去重</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nt0042nkv4gbadeafd/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nt0042nkv4gbadeafd/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kn5003yjov48qlbdklc/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kn5003yjov48qlbdklc/</id>
     <published>2021-02-20T01:54:41.000Z</published>
     <updated>2021-02-20T01:54:41.046Z</updated>
     
@@ -207,8 +240,8 @@ JS里的面试题千分符
   
   <entry>
     <title>JS里的面试题Promise的使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19n1003enkv43q7q3sii/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19n1003enkv43q7q3sii/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmm003cjov4e1l7gxzh/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmm003cjov4e1l7gxzh/</id>
     <published>2021-02-19T15:26:23.000Z</published>
     <updated>2021-02-19T15:26:23.321Z</updated>
     
@@ -222,8 +255,8 @@ JS里的面试题千分符
   
   <entry>
     <title>JS里的面试题继承</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19os004tnkv46sjd3d81/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19os004tnkv46sjd3d81/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kne0043jov4eeqtbpvl/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kne0043jov4eeqtbpvl/</id>
     <published>2021-02-19T14:47:55.000Z</published>
     <updated>2021-02-19T15:22:30.663Z</updated>
     
@@ -255,8 +288,8 @@ JS里的面试题继承
   
   <entry>
     <title>JS里的面试题解析url参数</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ot004vnkv4gvayhgjv/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ot004vnkv4gvayhgjv/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35knh0045jov43blhebms/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35knh0045jov43blhebms/</id>
     <published>2021-02-19T12:33:13.000Z</published>
     <updated>2021-02-19T14:46:41.987Z</updated>
     
@@ -288,8 +321,8 @@ JS里的面试题解析url参数
   
   <entry>
     <title>CSS里的demo实现滑动单选框</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19iw000mnkv4fq7g19ry/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19iw000mnkv4fq7g19ry/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kjm000ijov41hurc2gl/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kjm000ijov41hurc2gl/</id>
     <published>2021-02-19T01:48:03.000Z</published>
     <updated>2021-02-19T02:04:50.911Z</updated>
     
@@ -321,8 +354,8 @@ CSS里的demo实现滑动单选框
   
   <entry>
     <title>JS里的面试题冒泡排序</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19np003ynkv4a5xy5g7f/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19np003ynkv4a5xy5g7f/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmd0036jov42px2dczr/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmd0036jov42px2dczr/</id>
     <published>2021-02-18T16:02:20.000Z</published>
     <updated>2021-02-18T16:42:26.590Z</updated>
     
@@ -354,8 +387,8 @@ JS里的面试题冒泡排序
   
   <entry>
     <title>JS里的面试题交换两个变量的值</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19n5003hnkv47hd1btdo/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19n5003hnkv47hd1btdo/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmh0039jov4ffyqahud/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmh0039jov4ffyqahud/</id>
     <published>2021-02-18T15:15:03.000Z</published>
     <updated>2021-02-18T15:15:03.450Z</updated>
     
@@ -369,8 +402,8 @@ JS里的面试题冒泡排序
   
   <entry>
     <title>JS里的面试题数组和对象API</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19or004qnkv4cjje88l7/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19or004qnkv4cjje88l7/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kn90041jov4d3xr4s62/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kn90041jov4d3xr4s62/</id>
     <published>2021-02-17T04:37:53.000Z</published>
     <updated>2021-02-17T12:25:16.262Z</updated>
     
@@ -402,8 +435,8 @@ JS里的面试题数组和对象API
   
   <entry>
     <title>JS里的面试题作用域和闭包</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nm003vnkv4dda33rpx/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nm003vnkv4dda33rpx/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kms003jjov4aruyd193/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kms003jjov4aruyd193/</id>
     <published>2021-02-16T10:18:51.000Z</published>
     <updated>2021-02-18T08:55:53.960Z</updated>
     
@@ -435,8 +468,8 @@ JS里的面试题作用域和闭包
   
   <entry>
     <title>JS里的面试题原型和原型链</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19oi004fnkv4gcg29ybz/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19oi004fnkv4gcg29ybz/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmu003ljov48uke53ng/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmu003ljov48uke53ng/</id>
     <published>2021-02-16T04:41:21.000Z</published>
     <updated>2021-02-18T08:55:53.943Z</updated>
     
@@ -468,8 +501,8 @@ JS里的面试题原型和原型链
   
   <entry>
     <title>JS里的面试题变量类型和计算</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nz0049nkv43nm3gcdy/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nz0049nkv43nm3gcdy/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmv003njov4dgz1ech3/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmv003njov4dgz1ech3/</id>
     <published>2021-02-15T13:47:49.000Z</published>
     <updated>2021-02-18T08:55:53.925Z</updated>
     
@@ -501,8 +534,8 @@ JS里的面试题变量类型和计算
   
   <entry>
     <title>2021年的新年日记</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19hu0006nkv4aj9temqo/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19hu0006nkv4aj9temqo/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kiw0002jov41o8kc42v/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kiw0002jov41o8kc42v/</id>
     <published>2021-02-12T15:21:08.000Z</published>
     <updated>2021-02-12T15:43:15.674Z</updated>
     
@@ -534,8 +567,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>JS里的面试题防抖和节流的使用和区别</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ov004ynkv47cxghhwr/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ov004ynkv47cxghhwr/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35knn004djov4epvuauwy/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35knn004djov4epvuauwy/</id>
     <published>2021-02-11T08:20:10.000Z</published>
     <updated>2021-02-15T13:47:01.794Z</updated>
     
@@ -567,8 +600,8 @@ JS里的防抖和节流的使用和区别
   
   <entry>
     <title>JS里的面试题判断一个字符出现最多的字符和字数</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19nb003onkv4fk7da3id/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19nb003onkv4fk7da3id/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kmw003qjov4gf6l21dy/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kmw003qjov4gf6l21dy/</id>
     <published>2021-02-08T15:46:26.000Z</published>
     <updated>2021-02-19T03:12:41.037Z</updated>
     
@@ -600,8 +633,8 @@ JS里的面试题判断一个字符出现最多的字符和字数
   
   <entry>
     <title>JS里的仿淘宝固定侧边栏</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19l90022nkv49wj4ga6n/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19l90022nkv49wj4ga6n/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kld0021jov4htjuhx3q/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kld0021jov4htjuhx3q/</id>
     <published>2021-02-05T14:47:58.000Z</published>
     <updated>2021-02-05T14:47:58.996Z</updated>
     
@@ -615,8 +648,8 @@ JS里的面试题判断一个字符出现最多的字符和字数
   
   <entry>
     <title>JS里的动画函数的封装</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19lq002enkv4beto6ai4/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19lq002enkv4beto6ai4/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klg0027jov48kyv9rek/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klg0027jov48kyv9rek/</id>
     <published>2021-02-05T14:46:42.000Z</published>
     <updated>2021-02-05T14:46:42.372Z</updated>
     
@@ -630,8 +663,8 @@ JS里的面试题判断一个字符出现最多的字符和字数
   
   <entry>
     <title>JS里的轮播图的案例</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19n7003knkv4gepp1fdr/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19n7003knkv4gepp1fdr/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kma0034jov477u61t2i/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kma0034jov477u61t2i/</id>
     <published>2021-02-05T14:45:47.000Z</published>
     <updated>2021-02-05T14:45:47.895Z</updated>
     
@@ -645,8 +678,8 @@ JS里的面试题判断一个字符出现最多的字符和字数
   
   <entry>
     <title>JS里的放大镜效果</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19me002tnkv4cdm7gdch/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19me002tnkv4cdm7gdch/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kls002mjov47b17d440/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kls002mjov47b17d440/</id>
     <published>2021-02-05T14:20:54.000Z</published>
     <updated>2021-02-05T14:36:35.163Z</updated>
     
@@ -678,8 +711,8 @@ JS里的放大镜效果
   
   <entry>
     <title>JS里的模态框拖拽</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19mc002qnkv4a8cudysz/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19mc002qnkv4a8cudysz/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klu002pjov48poy0j8e/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klu002pjov48poy0j8e/</id>
     <published>2021-02-05T12:15:27.000Z</published>
     <updated>2021-02-05T12:38:08.408Z</updated>
     
@@ -711,8 +744,8 @@ JS里的模态框拖拽
   
   <entry>
     <title>JS里的登录跳转页面</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19mn0030nkv4fu3qdffo/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19mn0030nkv4fu3qdffo/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klw002sjov42e56bg9a/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klw002sjov42e56bg9a/</id>
     <published>2021-02-04T12:40:48.000Z</published>
     <updated>2021-02-04T12:43:58.794Z</updated>
     
@@ -744,8 +777,8 @@ JS里的登录跳转页面
   
   <entry>
     <title>JS里的5秒钟之后跳转页面</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19km001pnkv45lh90a33/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19km001pnkv45lh90a33/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kkz001jjov46v1aho6i/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kkz001jjov46v1aho6i/</id>
     <published>2021-02-04T12:16:43.000Z</published>
     <updated>2021-02-04T12:29:42.759Z</updated>
     
@@ -777,8 +810,8 @@ JS里的5秒钟之后跳转页面
   
   <entry>
     <title>JS里的发送短信案例</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pb005onkv48jv9aos5/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pb005onkv48jv9aos5/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kli002bjov46h6s8nz6/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kli002bjov46h6s8nz6/</id>
     <published>2021-02-04T12:11:24.000Z</published>
     <updated>2021-02-04T12:13:56.551Z</updated>
     
@@ -810,8 +843,8 @@ JS里的发送短信案例
   
   <entry>
     <title>JS里的倒计时案例</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19lk0028nkv45y8cbn6w/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19lk0028nkv45y8cbn6w/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klh002ajov48nov4hf2/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klh002ajov48nov4hf2/</id>
     <published>2021-02-04T11:51:58.000Z</published>
     <updated>2021-02-04T11:54:38.829Z</updated>
     
@@ -843,8 +876,8 @@ JS里的倒计时案例
   
   <entry>
     <title>JS里的调整窗口大小变化</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19mq0034nkv48aus46wo/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19mq0034nkv48aus46wo/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35km80030jov45lze57jc/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35km80030jov45lze57jc/</id>
     <published>2021-02-04T11:27:39.000Z</published>
     <updated>2021-02-04T11:35:19.548Z</updated>
     
@@ -876,8 +909,8 @@ JS里的调整窗口大小变化
   
   <entry>
     <title>JS里的按键获取光标事件</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19mk002xnkv4gwhy6dm0/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19mk002xnkv4gwhy6dm0/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klp002gjov4dnk8eo9u/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klp002gjov4dnk8eo9u/</id>
     <published>2021-02-04T11:19:45.000Z</published>
     <updated>2021-02-04T11:25:07.721Z</updated>
     
@@ -909,8 +942,8 @@ JS里的按键获取光标事件
   
   <entry>
     <title>JS里的快递单号放大查询</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19m9002nnkv4hp2bh5r4/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19m9002nnkv4hp2bh5r4/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kln002fjov4bm8vadhg/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kln002fjov4bm8vadhg/</id>
     <published>2021-02-04T06:44:01.000Z</published>
     <updated>2021-02-04T06:45:33.970Z</updated>
     
@@ -942,8 +975,8 @@ JS里的快递单号放大查询
   
   <entry>
     <title>JS里的图片跟随鼠标事件</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19m4002knkv42dg1dnq4/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19m4002knkv42dg1dnq4/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klq002jjov4660c5o7i/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klq002jjov4660c5o7i/</id>
     <published>2021-02-04T03:36:14.000Z</published>
     <updated>2021-02-18T08:55:53.976Z</updated>
     
@@ -975,8 +1008,8 @@ JS里的图片跟随鼠标事件
   
   <entry>
     <title>JS里的动态生成表格</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ln002cnkv4g38r7ce7/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ln002cnkv4g38r7ce7/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klf0024jov497gacfc5/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klf0024jov497gacfc5/</id>
     <published>2021-02-03T12:29:20.000Z</published>
     <updated>2021-02-03T13:38:53.236Z</updated>
     
@@ -1008,8 +1041,8 @@ JS里的动态生成表格
   
   <entry>
     <title>JS里的留言板案例</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19mv0037nkv45jsyffh9/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19mv0037nkv45jsyffh9/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klx002vjov4h2dw9z4c/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klx002vjov4h2dw9z4c/</id>
     <published>2021-02-03T11:41:19.000Z</published>
     <updated>2021-02-03T12:28:47.671Z</updated>
     
@@ -1041,8 +1074,8 @@ JS里的留言板案例
   
   <entry>
     <title>JS里的下拉菜单</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19lh0026nkv46kw26xvl/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19lh0026nkv46kw26xvl/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klc001yjov47xbjdrn9/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klc001yjov47xbjdrn9/</id>
     <published>2021-02-03T10:53:33.000Z</published>
     <updated>2021-02-03T11:39:31.513Z</updated>
     
@@ -1074,8 +1107,8 @@ JS里的下拉菜单
   
   <entry>
     <title>JS里的高级语法</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19oy0053nkv40jqe4gp3/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19oy0053nkv40jqe4gp3/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35knr004jjov46lii9ufk/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35knr004jjov46lii9ufk/</id>
     <published>2021-02-02T13:15:58.000Z</published>
     <updated>2021-02-18T08:58:50.787Z</updated>
     
@@ -1107,8 +1140,8 @@ JS里的高级语法
   
   <entry>
     <title>JS里的Tab栏切换</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19kj001nnkv47jip6qxx/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19kj001nnkv47jip6qxx/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kkx001gjov40j2w1l1m/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kkx001gjov40j2w1l1m/</id>
     <published>2021-02-02T11:29:30.000Z</published>
     <updated>2021-02-03T10:52:16.123Z</updated>
     
@@ -1140,8 +1173,8 @@ JS里的Tab栏切换
   
   <entry>
     <title>HTMLandCSS的面试题</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19jz0018nkv4d6vjbszl/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19jz0018nkv4d6vjbszl/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kkr0018jov40by8de1x/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kkr0018jov40by8de1x/</id>
     <published>2021-01-27T02:46:31.000Z</published>
     <updated>2021-02-02T13:24:20.363Z</updated>
     
@@ -1173,8 +1206,8 @@ HTMLandCSS的面试题
   
   <entry>
     <title>JS里的if语句括号里面的判断</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19l2001xnkv4405icaob/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19l2001xnkv4405icaob/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kl4001njov40baegvjz/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kl4001njov40baegvjz/</id>
     <published>2021-01-26T16:10:18.000Z</published>
     <updated>2021-02-18T08:55:53.993Z</updated>
     
@@ -1206,8 +1239,8 @@ JS里的if语句括号里面的判断
   
   <entry>
     <title>最近的计划安排</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19r5009ynkv42oszeo8m/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19r5009ynkv42oszeo8m/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35ksa0092jov4547h7tjj/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35ksa0092jov4547h7tjj/</id>
     <published>2021-01-26T15:12:27.000Z</published>
     <updated>2021-01-27T12:46:50.250Z</updated>
     
@@ -1239,8 +1272,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>JS里的try-catch的使用（简单用法）</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ly002hnkv4hacvbryy/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ly002hnkv4hacvbryy/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35klb001vjov46oci3lqw/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35klb001vjov46oci3lqw/</id>
     <published>2021-01-20T13:59:57.000Z</published>
     <updated>2021-01-24T05:17:37.781Z</updated>
     
@@ -1273,8 +1306,8 @@ c#中异常捕获，用来处理可能程序会发生的错误函数。
   
   <entry>
     <title>JS中的for in , for of 和forEach</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ka001hnkv4f0ug7dfh/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ka001hnkv4f0ug7dfh/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kkk0015jov48n2hbvbc/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kkk0015jov48n2hbvbc/</id>
     <published>2021-01-19T14:34:08.000Z</published>
     <updated>2021-02-21T08:41:47.491Z</updated>
     
@@ -1307,8 +1340,8 @@ JS中的for in , for of 和forEach
   
   <entry>
     <title>CSS中box-sizing border-box用法解析</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19hm0004nkv481znhz26/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19hm0004nkv481znhz26/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kj90005jov466wx64y9/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kj90005jov466wx64y9/</id>
     <published>2021-01-19T03:46:31.000Z</published>
     <updated>2021-01-19T03:47:50.021Z</updated>
     
@@ -1322,8 +1355,8 @@ JS中的for in , for of 和forEach
   
   <entry>
     <title>CSS中在定位里面 left 和 right 等于零的使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19i00008nkv4cc2thxt6/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19i00008nkv4cc2thxt6/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kjf0008jov4h5nya844/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kjf0008jov4h5nya844/</id>
     <published>2021-01-18T03:32:20.000Z</published>
     <updated>2021-01-18T03:50:08.037Z</updated>
     
@@ -1355,8 +1388,8 @@ CSS中在定位里面 left 和 right 等于零的使用
   
   <entry>
     <title>Vue中的MVVM</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19qc0084nkv4bzhw01vd/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19qc0084nkv4bzhw01vd/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kop004zjov42lc218n0/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kop004zjov42lc218n0/</id>
     <published>2021-01-16T08:29:26.000Z</published>
     <updated>2021-01-16T08:29:27.010Z</updated>
     
@@ -1370,8 +1403,8 @@ CSS中在定位里面 left 和 right 等于零的使用
   
   <entry>
     <title>单页面与多页面的对比使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19qo008snkv48mgfdhds/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19qo008snkv48mgfdhds/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35krb0080jov4b0dcawqk/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35krb0080jov4b0dcawqk/</id>
     <published>2021-01-16T03:46:09.000Z</published>
     <updated>2021-01-21T13:23:12.146Z</updated>
     
@@ -1403,8 +1436,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>Vue中的vue-router</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pn006hnkv47lpq9ria/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pn006hnkv47lpq9ria/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpm005zjov4g0wccj4n/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpm005zjov4g0wccj4n/</id>
     <published>2021-01-14T13:35:24.000Z</published>
     <updated>2021-01-14T13:35:24.735Z</updated>
     
@@ -1418,8 +1451,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>Vue中的vuex的使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pr006qnkv4cy3kerz6/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pr006qnkv4cy3kerz6/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpo0062jov4gs3scb4m/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpo0062jov4gs3scb4m/</id>
     <published>2021-01-14T13:29:05.000Z</published>
     <updated>2021-01-14T13:29:05.063Z</updated>
     
@@ -1433,8 +1466,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>Vue中的mixin抽离公共逻辑</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pk0069nkv4cg772095/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pk0069nkv4cg772095/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kp9005ijov4a9dwgj23/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kp9005ijov4a9dwgj23/</id>
     <published>2021-01-14T13:10:21.000Z</published>
     <updated>2021-01-15T08:41:57.694Z</updated>
     
@@ -1466,8 +1499,8 @@ Vue中的mixin抽离公共逻辑
   
   <entry>
     <title>Vue中的异步组件的使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pz0075nkv43iep0se9/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pz0075nkv43iep0se9/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpw006cjov42fn0gbud/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpw006cjov42fn0gbud/</id>
     <published>2021-01-14T12:53:18.000Z</published>
     <updated>2021-01-15T12:19:39.910Z</updated>
     
@@ -1499,8 +1532,8 @@ Vue中的异步组件的使用
   
   <entry>
     <title>Vue中的动态组件的使用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pw006wnkv46gnv985o/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pw006wnkv46gnv985o/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpr0065jov4c44x3mta/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpr0065jov4c44x3mta/</id>
     <published>2021-01-14T12:48:25.000Z</published>
     <updated>2021-01-15T12:45:34.421Z</updated>
     
@@ -1532,8 +1565,8 @@ Vue中的动态组件的使用
   
   <entry>
     <title>Vue中的slot</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pm006fnkv43ce1bjie/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pm006fnkv43ce1bjie/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpb005kjov4dka70lzz/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpb005kjov4dka70lzz/</id>
     <published>2021-01-14T12:29:10.000Z</published>
     <updated>2021-01-15T13:45:15.061Z</updated>
     
@@ -1565,8 +1598,8 @@ Vue中的slot
   
   <entry>
     <title>Vue中的父子组件的v-model实现</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19r5009wnkv4cr2u4asr/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19r5009wnkv4cr2u4asr/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpx006ejov442c528gg/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpx006ejov442c528gg/</id>
     <published>2021-01-14T03:49:19.000Z</published>
     <updated>2021-01-14T12:18:29.652Z</updated>
     
@@ -1598,8 +1631,8 @@ Vue中的父子组件的v-model实现
   
   <entry>
     <title>Vue中的生命周期</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19q00077nkv42zwb1wb3/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19q00077nkv42zwb1wb3/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpy006hjov495cg4x8r/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpy006hjov495cg4x8r/</id>
     <published>2021-01-13T14:06:52.000Z</published>
     <updated>2021-01-14T03:35:51.004Z</updated>
     
@@ -1631,8 +1664,8 @@ Vue中的生命周期
   
   <entry>
     <title>Vue中的兄弟组件之间的传值</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pt006tnkv45ga50mlp/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pt006tnkv45ga50mlp/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpi005tjov42e4vgk6b/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpi005tjov42e4vgk6b/</id>
     <published>2021-01-13T02:24:56.000Z</published>
     <updated>2021-01-13T02:46:33.912Z</updated>
     
@@ -1664,8 +1697,8 @@ Vue中的兄弟组件之间的传值
   
   <entry>
     <title>Vue中的子组件传值到父组件</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19px006znkv40v5yhkz5/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19px006znkv40v5yhkz5/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpv0069jov4a5no8pyr/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpv0069jov4a5no8pyr/</id>
     <published>2021-01-12T13:06:30.000Z</published>
     <updated>2021-01-12T13:28:41.135Z</updated>
     
@@ -1697,8 +1730,8 @@ Vue中的子组件传值到父组件
   
   <entry>
     <title>Vue中的父组件传值到子组件</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19px0071nkv46nqn5tyt/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19px0071nkv46nqn5tyt/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpu0068jov4ev0lcrd9/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpu0068jov4ev0lcrd9/</id>
     <published>2021-01-12T08:37:32.000Z</published>
     <updated>2021-01-15T07:49:17.578Z</updated>
     
@@ -1730,8 +1763,8 @@ Vue中的父组件传值到子组件
   
   <entry>
     <title>Vue中项目打包之前的处理</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19q2007dnkv49ifl7iy8/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19q2007dnkv49ifl7iy8/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kq1006njov42qkodsp3/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kq1006njov42qkodsp3/</id>
     <published>2021-01-12T08:27:21.000Z</published>
     <updated>2021-01-12T08:36:04.148Z</updated>
     
@@ -1763,8 +1796,8 @@ Vue中项目打包之前的处理
   
   <entry>
     <title>Vue中的watch和computed的差异</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19po006knkv4hxy45r1i/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19po006knkv4hxy45r1i/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpk005wjov406lp3sr7/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpk005wjov406lp3sr7/</id>
     <published>2021-01-12T02:19:03.000Z</published>
     <updated>2021-01-13T08:13:08.644Z</updated>
     
@@ -1796,8 +1829,8 @@ Vue中的watch和computed的差异
   
   <entry>
     <title>Vue中的key的作用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pl006bnkv44b0ndnki/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pl006bnkv44b0ndnki/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kp6005fjov49z1u2skd/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kp6005fjov49z1u2skd/</id>
     <published>2021-01-11T12:59:04.000Z</published>
     <updated>2021-01-11T13:22:27.678Z</updated>
     
@@ -1829,8 +1862,8 @@ Vue中的key的作用
   
   <entry>
     <title>Vue中的keep-alive</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pi0062nkv411bs08gi/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pi0062nkv411bs08gi/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kp3005cjov40eawhyu8/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kp3005cjov40eawhyu8/</id>
     <published>2021-01-11T12:49:01.000Z</published>
     <updated>2021-01-15T11:10:28.461Z</updated>
     
@@ -1862,8 +1895,8 @@ Vue中的keep-alive
   
   <entry>
     <title>Vue组件data为什么是函数</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19q1007ankv4hx0m7tic/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19q1007ankv4hx0m7tic/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpz006kjov4acwt5309/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpz006kjov4acwt5309/</id>
     <published>2021-01-11T12:26:24.000Z</published>
     <updated>2021-01-11T12:33:48.259Z</updated>
     
@@ -1895,8 +1928,8 @@ Vue组件data为什么是函数
   
   <entry>
     <title>Vue中的v-loader的作用</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pk0066nkv45ctqhthb/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pk0066nkv45ctqhthb/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpe005ojov48ods6tzn/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpe005ojov48ods6tzn/</id>
     <published>2021-01-11T08:15:50.000Z</published>
     <updated>2021-01-11T11:30:42.790Z</updated>
     
@@ -1928,8 +1961,8 @@ Vue中的v-loader的作用
   
   <entry>
     <title>Vue中的v-model和标签绑定事件</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pp006nnkv47hk8bgmo/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pp006nnkv47hk8bgmo/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kpg005qjov4f2cr0qi3/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kpg005qjov4f2cr0qi3/</id>
     <published>2021-01-11T07:53:15.000Z</published>
     <updated>2021-01-21T13:23:12.167Z</updated>
     
@@ -1961,8 +1994,8 @@ Vue中的v-model和标签绑定事件
   
   <entry>
     <title>npm安装时 --save --dev 和 --save 区别</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19qd0086nkv44jwk0mvn/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19qd0086nkv44jwk0mvn/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kqj007ejov4fvuj7yrk/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kqj007ejov4fvuj7yrk/</id>
     <published>2021-01-11T07:31:57.000Z</published>
     <updated>2021-01-11T07:39:09.104Z</updated>
     
@@ -1994,8 +2027,8 @@ npm安装时 --save --dev 和 --save 区别
   
   <entry>
     <title>Vue中的css的scoped细解</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pg005znkv46gw38wfe/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pg005znkv46gw38wfe/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kp10059jov44vok4m0g/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kp10059jov44vok4m0g/</id>
     <published>2021-01-11T07:22:47.000Z</published>
     <updated>2021-01-11T08:13:51.440Z</updated>
     
@@ -2027,8 +2060,8 @@ Vue中的css的scoped细解
   
   <entry>
     <title>我喜欢的歌手是许嵩</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19qu0096nkv4gm5x643m/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19qu0096nkv4gm5x643m/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35krq008ejov4c5kv9nm3/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35krq008ejov4c5kv9nm3/</id>
     <published>2021-01-10T11:18:52.000Z</published>
     <updated>2021-01-10T11:42:16.978Z</updated>
     
@@ -2060,8 +2093,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>Vue中this.$nextTick()的用法</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pf005vnkv43v1uaobk/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pf005vnkv43v1uaobk/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kos0051jov4gn40bukz/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kos0051jov4gn40bukz/</id>
     <published>2021-01-09T14:05:15.000Z</published>
     <updated>2021-01-21T13:23:12.127Z</updated>
     
@@ -2093,8 +2126,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>VUE路上踩坑</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19p4005ankv40stx31i4/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19p4005ankv40stx31i4/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kod004pjov4eqym5h43/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kod004pjov4eqym5h43/</id>
     <published>2021-01-09T04:21:18.000Z</published>
     <updated>2021-01-17T14:46:46.548Z</updated>
     
@@ -2126,8 +2159,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>ES6导入导出的两种方式</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19ik000hnkv40ypw0t05/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19ik000hnkv40ypw0t05/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kjl000ejov4c8nh8yeo/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kjl000ejov4c8nh8yeo/</id>
     <published>2021-01-08T06:15:12.000Z</published>
     <updated>2021-01-08T06:15:12.037Z</updated>
     
@@ -2141,8 +2174,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>VUE脚手架项目语法规则解决方案</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19p5005dnkv481ho43l9/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19p5005dnkv481ho43l9/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35koi004rjov49nf21we4/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35koi004rjov49nf21we4/</id>
     <published>2021-01-04T07:45:30.000Z</published>
     <updated>2021-01-04T08:42:19.622Z</updated>
     
@@ -2174,8 +2207,8 @@ VUE脚手架项目语法规则解决方案
   
   <entry>
     <title>VUE里的v-for和v-if使用的区别</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19pe005tnkv4aqvyex6l/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19pe005tnkv4aqvyex6l/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35koz0057jov49zml8d2c/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35koz0057jov49zml8d2c/</id>
     <published>2021-01-01T07:57:42.000Z</published>
     <updated>2021-01-02T13:56:59.463Z</updated>
     
@@ -2207,8 +2240,8 @@ VUE里的v-for和v-if使用的区别
   
   <entry>
     <title>VUE里的v-if和v-show使用的区别</title>
-    <link href="https://wujun1234567.github.io/2021/ckmbg19p8005inkv4hxmp22fg/"/>
-    <id>https://wujun1234567.github.io/2021/ckmbg19p8005inkv4hxmp22fg/</id>
+    <link href="https://wujun1234567.github.io/2021/ckpf35kox0054jov4ajwp6vxz/"/>
+    <id>https://wujun1234567.github.io/2021/ckpf35kox0054jov4ajwp6vxz/</id>
     <published>2021-01-01T02:35:49.000Z</published>
     <updated>2021-01-11T07:34:47.651Z</updated>
     
@@ -2240,8 +2273,8 @@ VUE里的v-if和v-show使用的区别
   
   <entry>
     <title>VUE里的computed属性和方法属性的区别</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19p9005jnkv48440bljk/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19p9005jnkv48440bljk/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kol004ujov44clschyb/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kol004ujov44clschyb/</id>
     <published>2020-12-31T13:43:01.000Z</published>
     <updated>2020-12-31T14:02:03.551Z</updated>
     
@@ -2273,8 +2306,8 @@ VUE里的computed属性和方法属性的区别
   
   <entry>
     <title>2021年的目标</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19he0002nkv48n001cxi/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19he0002nkv48n001cxi/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kj30003jov41xy00f6e/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kj30003jov41xy00f6e/</id>
     <published>2020-12-31T13:23:51.000Z</published>
     <updated>2020-12-31T13:28:16.900Z</updated>
     
@@ -2294,8 +2327,8 @@ VUE里的computed属性和方法属性的区别
   
   <entry>
     <title>CSS中margin-left等于负值的妙用</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19id000cnkv4d6tc1f9w/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19id000cnkv4d6tc1f9w/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kjd0006jov4gi9g272f/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kjd0006jov4gi9g272f/</id>
     <published>2020-12-31T09:17:54.000Z</published>
     <updated>2020-12-31T09:38:14.425Z</updated>
     
@@ -2327,8 +2360,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>JS里的==和===的使用</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19ku001vnkv48vzv3erg/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19ku001vnkv48vzv3erg/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kkv001djov4caut0gbh/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kkv001djov4caut0gbh/</id>
     <published>2020-12-30T15:23:02.000Z</published>
     <updated>2021-01-02T14:04:35.131Z</updated>
     
@@ -2360,8 +2393,8 @@ JS里的==和===的使用
   
   <entry>
     <title>JS里的setTimeout(foo,0)和foo()</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19l60020nkv42h5yg469/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19l60020nkv42h5yg469/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kl9001tjov45luyhcja/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kl9001tjov45luyhcja/</id>
     <published>2020-12-30T13:01:08.000Z</published>
     <updated>2021-01-03T14:54:37.343Z</updated>
     
@@ -2393,8 +2426,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>最近的学习感悟</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19r3009rnkv4b8vh41r1/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19r3009rnkv4b8vh41r1/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35ks6008xjov4emhgeh3t/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35ks6008xjov4emhgeh3t/</id>
     <published>2020-12-28T15:43:15.000Z</published>
     <updated>2020-12-28T16:13:55.823Z</updated>
     
@@ -2426,8 +2459,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>HTML5andCSS3总复习</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19jm0010nkv4802ehe3e/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19jm0010nkv4802ehe3e/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kkc000wjov4d7y6af4z/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kkc000wjov4d7y6af4z/</id>
     <published>2020-12-27T14:35:05.000Z</published>
     <updated>2021-01-02T04:01:30.676Z</updated>
     
@@ -2459,8 +2492,8 @@ CSS总复习
   
   <entry>
     <title>Git和Github入门</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19ji000ynkv4b3qoennh/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19ji000ynkv4b3qoennh/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kk9000tjov4ceoidihw/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kk9000tjov4ceoidihw/</id>
     <published>2020-12-25T05:21:42.000Z</published>
     <updated>2020-12-31T08:14:44.661Z</updated>
     
@@ -2492,8 +2525,8 @@ Git和Github入门
   
   <entry>
     <title>VUE总复习</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19pc005pnkv4eea1ex6t/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19pc005pnkv4eea1ex6t/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kon004vjov46uf5hzlb/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kon004vjov46uf5hzlb/</id>
     <published>2020-12-24T09:02:35.000Z</published>
     <updated>2021-01-03T13:56:33.898Z</updated>
     
@@ -2525,8 +2558,8 @@ VUE复习
   
   <entry>
     <title>CSS总复习</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19if000dnkv4d5o8eobf/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19if000dnkv4d5o8eobf/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kjj000cjov46nrq79be/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kjj000cjov46nrq79be/</id>
     <published>2020-12-24T05:24:42.000Z</published>
     <updated>2021-02-01T03:18:49.558Z</updated>
     
@@ -2558,8 +2591,8 @@ CSS总复习
   
   <entry>
     <title>HTML总复习</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19jq0013nkv4gqwz3i2j/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19jq0013nkv4gqwz3i2j/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kke000yjov4evocdx6w/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kke000yjov4evocdx6w/</id>
     <published>2020-12-22T08:14:08.000Z</published>
     <updated>2020-12-23T16:21:14.049Z</updated>
     
@@ -2591,8 +2624,8 @@ HTML总复习
   
   <entry>
     <title>ES6语法学习</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19je000unkv4gsr78i19/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19je000unkv4gsr78i19/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kju000mjov47sk16dyq/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kju000mjov47sk16dyq/</id>
     <published>2020-12-21T11:47:46.000Z</published>
     <updated>2021-01-31T13:21:32.713Z</updated>
     
@@ -2624,8 +2657,8 @@ ES6语法学习
   
   <entry>
     <title>黑马商城vue</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19rk00atnkv483m414js/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19rk00atnkv483m414js/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35ksp009qjov4gwwd8g7o/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35ksp009qjov4gwwd8g7o/</id>
     <published>2020-12-16T14:57:42.000Z</published>
     <updated>2020-12-17T08:09:06.566Z</updated>
     
@@ -2653,8 +2686,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>cookie-token-session</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19q6007rnkv49qh73vfc/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19q6007rnkv49qh73vfc/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kqc0072jov4dfal2npn/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kqc0072jov4dfal2npn/</id>
     <published>2020-12-16T06:01:39.000Z</published>
     <updated>2020-12-16T06:13:25.370Z</updated>
     
@@ -2682,8 +2715,8 @@ cookie-token-session
   
   <entry>
     <title>bootstrap项目的解析</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19q2007gnkv453gcbdrn/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19q2007gnkv453gcbdrn/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kq9006yjov42v6ehmyv/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kq9006yjov42v6ehmyv/</id>
     <published>2020-12-15T10:03:09.000Z</published>
     <updated>2020-12-21T12:19:15.119Z</updated>
     
@@ -2697,8 +2730,8 @@ cookie-token-session
   
   <entry>
     <title>bootstrap项目上传到码云</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19q5007pnkv4g3wka0bu/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19q5007pnkv4g3wka0bu/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kqb0071jov4f7y2fai7/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kqb0071jov4f7y2fai7/</id>
     <published>2020-12-15T09:43:26.000Z</published>
     <updated>2020-12-15T11:02:46.139Z</updated>
     
@@ -2726,8 +2759,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>vue案例解说</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19qh008ankv46505041a/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19qh008ankv46505041a/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kqn007kjov4dh1m7yj8/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kqn007kjov4dh1m7yj8/</id>
     <published>2020-12-12T06:13:11.000Z</published>
     <updated>2020-12-19T13:57:46.687Z</updated>
     
@@ -2755,8 +2788,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>ES6模块化</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19io000inkv40h4i6i6t/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19io000inkv40h4i6i6t/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kk3000rjov42qqk9hxv/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kk3000rjov42qqk9hxv/</id>
     <published>2020-12-09T07:16:18.000Z</published>
     <updated>2020-12-09T07:16:18.495Z</updated>
     
@@ -2770,8 +2803,8 @@ margin-top: 15px;float: left;&quot;&gt;
   
   <entry>
     <title>第三方模块nrm(第三方模块下载器的选择)</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19ri00apnkv46tgdb2nc/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19ri00apnkv46tgdb2nc/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35ksl009ijov43fj56afj/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35ksl009ijov43fj56afj/</id>
     <published>2020-12-08T14:22:21.000Z</published>
     <updated>2020-12-10T14:09:31.207Z</updated>
     
@@ -2799,8 +2832,8 @@ nrm用来选择第三方模块的下载路径。优先选择淘宝的模块。
   
   <entry>
     <title>jsonp的请求原理</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19q8007xnkv443modr19/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19q8007xnkv443modr19/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kqh007ajov495j42ait/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kqh007ajov495j42ait/</id>
     <published>2020-12-08T08:14:03.000Z</published>
     <updated>2020-12-08T13:21:11.347Z</updated>
     
@@ -2828,8 +2861,8 @@ jsonp跨域原理解析细解
   
   <entry>
     <title> retun-ture和return-false的区别 </title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19qk008inkv43sg649js/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19qk008inkv43sg649js/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kqk007gjov4glvkggz5/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kqk007gjov4glvkggz5/</id>
     <published>2020-12-08T08:13:23.000Z</published>
     <updated>2020-12-15T10:46:05.949Z</updated>
     
@@ -2850,8 +2883,8 @@ jsonp跨域原理解析细解
   
   <entry>
     <title>ES6模块化和webpack打包</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19j3000snkv4grzxay8b/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19j3000snkv4grzxay8b/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kjo000jjov4a3op7dft/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kjo000jjov4a3op7dft/</id>
     <published>2020-12-08T06:51:52.000Z</published>
     <updated>2020-12-09T07:57:44.731Z</updated>
     
@@ -2879,8 +2912,8 @@ ES6模块化和webpack打包
   
   <entry>
     <title>CSS前端面试题讲解</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19ia000bnkv4a5n7bsn4/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19ia000bnkv4a5n7bsn4/</id>
+    <link href="https://wujun1234567.github.io/2020/ckpf35kjh000bjov4f43cgzfn/"/>
+    <id>https://wujun1234567.github.io/2020/ckpf35kjh000bjov4f43cgzfn/</id>
     <published>2020-12-07T13:56:41.000Z</published>
     <updated>2020-12-07T14:01:00.433Z</updated>
     
@@ -2895,36 +2928,6 @@ margin-top: 15px;float: left;&quot;&gt;
 &lt;h4 style=&quot;padding: 0;margin: 0;&quot;&gt;CSS前端面试题讲解&lt;/h4&gt;
 &lt;div style=&quot;padding: 0;margin: 0;font-size: 12px;line-height: 30px&quot;&gt;
 加强CSS基础
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vue前后端交互</title>
-    <link href="https://wujun1234567.github.io/2020/ckmbg19qi008dnkv4hz170y9s/"/>
-    <id>https://wujun1234567.github.io/2020/ckmbg19qi008dnkv4hz170y9s/</id>
-    <published>2020-12-06T07:49:25.000Z</published>
-    <updated>2020-12-07T12:11:45.912Z</updated>
-    
-    <content type="html"><![CDATA[<div style="background-color: rgb(255, 251, 240);"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3647099666,2758135680&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;margin-top: 15px;float: left;"><div style="float: left;margin:20px 15px;width: 500px;height: 137px"><h4 style="padding: 0;margin: 0;">VUE常用特性学习记录</h4><div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">这里不写笔记，只写VUE有哪些知识点<br></div></div><a id="more"></a><br><br><br><br><br><br><hr><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"><p><strong>前后端交互概述与URL地址格式</strong><br>前后端交互<br>url地址格式</p><hr><p><strong>接口调用的方式</strong></p><h6>1.原生ajax</h6><h6>2.基于jQuery的ajax</h6><h6>3.Fetch</h6><h6>4.Promise</h6><hr><p><strong>url 地址格式</strong></p><h6>1.传统的url</h6> <img src="/image/vue/04/01.png"><img src="/image/vue/04/02.png"><hr><h6>2.Restful形式的url</h6><img src="/image/vue/04/03.png"><hr><p><strong>异步编程问题与Promise概述</strong><br>异步<br>promise</p><p><strong>jS中常见的异步调用</strong><br>定时任何 –<br>ajax<br>事件函数</p><img src="/image/vue/04/04.png"><p><strong>Promise解决了什么问题</strong><br>主要解决异步深层嵌套<br>语法更加简洁</p><hr><p><strong>Promise基本用法</strong><br><img src="/image/vue/04/05.png"><br><img src="/image/vue/04/06.png"></p><hr><p><strong>Promise发送Ajax请求并处理回调地狱问题</strong><br><img src="/image/vue/04/07.png"><br><strong>Promise发送多次Ajax请求并处理回调地狱问题</strong><br><img src="/image/vue/04/08.png"><br><img src="/image/vue/04/09.png"></p><hr><p><strong>Promise的then方法参数中的函数的返回值</strong><br>1.返回Promise实例对象</p><p>  返回的该实例对象会调用下一个then</p><p>2.返回普通值</p><p>  返回的普通值会直接传递给下一个then，通过then参数中函数的参数接收该值</p><img src="/image/vue/04/10.png"><hr><p><strong>Promise常用的API(实例对象)</strong><br>.then()<br>得到异步任务正确的结果<br>.catch()<br>获取异常信息<br>.finally()<br>成功与否都会执行（不是正式标准）</p><img src="/image/vue/04/11.png"><hr><p><strong>Promise常用的API(对象方法)</strong><br>.all()<br>Promise.all 方法接受一个数组作参数，数组中的对象（p1、p2、p3）均为promise实例（如果不是一个<br>promise，该项会被用 Promise.resolve 转换为一个promise)。它的状态由这三个promise实例决定</p><p>.race()<br>Promise.race 方法同样接受一个数组作参数。当p1, p2, p3中有一个实例的状态发生改变（变为 fulfilled<br>或 rejected ），p的状态就跟着改变。并把第一个改变状态的promise的返回值，传给p的回调函数</p><img src="/image/vue/04/12.png"><hr><p><strong>FetchAPI概述与基本使用</strong><br>fetch<br>Fetch API是新的ajax解决方案 Fetch会返回Promise<br>fetch不是ajax的进一步封装，而是原生js，没有使用XMLHttpRequest对象。<br><img src="/image/vue/04/13.png"></p><hr><p><strong>fetch请求参数</strong><br><strong>1.常用配置选项</strong></p><ul><li>method（String）:HTTP请求方法，默认GET（GET、POST、PUT、DELETE）</li><li>body（String）:HTTP请求方法</li><li>headers（Object）:HTTP请求头，默认为{}<img src="/image/vue/04/14.png"></li></ul><p><strong>2.GET请求方式的参数传递</strong><br><img src="/image/vue/04/15.png"><br>服务器路由设置<br><code>app.get(&#39;/books&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;传统的URL传递参数!&#39; + req.query.id)</code><br><code>})</code></p><p><code>app.get(&#39;/books/:id&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;Restful形式的URL传递参数!&#39; + req.params.id)</code><br><code>})</code></p><p><strong>3.DELETE请求方式的参数传递</strong><br><img src="/image/vue/04/16.png"><br>服务器路由设置<br><code>app.delete(&#39;/books/:id&#39;, (req, res) =&gt; {</code><br> <code>res.send(&#39;DELETE请求传递参数!&#39; + req.params.id)</code><br><code>})</code></p><p><strong>4.POST请求方式的参数传递</strong><br><img src="/image/vue/04/17.png"><br><img src="/image/vue/04/18.png"><br>服务器路由设置<br><code>app.post(&#39;/books&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;POST请求传递参数!&#39; + req.body.uname + &#39;---&#39; + req.body.pwd)</code><br><code>})</code></p><p><strong>5.PUT请求方式的参数传递</strong><br><img src="/image/vue/04/19.png"><br>服务器路由设置<br><code>app.put(&#39;/books/:id&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;PUT请求传递参数!&#39; + req.params.id + &#39;---&#39; + req.body.uname + &#39;---&#39; + req.body.pwd)</code><br><code>})</code></p><img src="/image/vue/04/20.png"><hr><p><strong>响应数据格式</strong></p><ul><li>text(): 将返回体处理成字符串类型</li><li>json(): 返回结果和JSON.parse(responseText)一样<img src="/image/vue/04/21.png"></li></ul><img src="/image/vue/04/22.png"><p>服务器路由设置<br><code>app.get(&#39;/json&#39;, (req, res) =&gt; {</code><br> <code>res.json({</code><br>    <code>uname: &#39;lisi&#39;,</code><br>   <code>age: 13,</code><br>   <code>gender: &#39;male&#39;</code><br> <code>});</code><br><code>})</code></p></p><hr><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"><p><strong>axios的基本用法</strong><br><img src="/image/vue/04/23.png"><br><img src="/image/vue/04/24.png"></p><p><code>app.get(&#39;/adata&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;Hello axios!&#39;)</code><br><code>})</code></p><p><strong>axios的常用API</strong></p><ul><li>get: 查询数据</li><li>post: 添加数据</li><li>put: 修改数据</li><li>delete: 删除数据</li></ul><p><strong>1.GET传递参数</strong></p><ul><li>通过URL传递参数</li><li>通过params 选项传递参数<img src="/image/vue/04/25.png"><img src="/image/vue/04/26.png"></li></ul><p>对应的三个服务器端的路由设置<br><code>app.get(&#39;/axios&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;axios get 传递参数&#39; + req.query.id)</code><br><code>})</code></p><p><code>app.get(&#39;/axios/:id&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;axios get (Restful) 传递参数&#39; + req.params.id)</code><br><code>})</code></p><p><code>app.get(&#39;/axios&#39;, (req, res) =&gt; {</code><br> <code>res.send(&#39;axios get 传递参数&#39; + req.query.id)</code><br><code>})</code></p><p><strong>2.DELETE传递参数</strong></p><ul><li>参数传递方式与GET类似<img src="/image/vue/04/28.png"></li></ul><img src="/image/vue/04/27.png">对应的三个服务器端的路由设置`app.delete('/axios', (req, res) => {`  `res.send('axios delete 传递参数' + req.query.id)``})`<p><code>app.delete(&#39;/axios/:id&#39;, (req, res) =&gt; {</code><br> <code>res.send(&#39;axios delete 传递参数&#39; + req.params.id)</code><br><code>})</code></p><p><code>app.delete(&#39;/axios&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;axios delete 传递参数&#39; + req.query.id)</code><br><code>})</code></p><p><strong>3.POST传递参数</strong></p><ul><li>通过选项传递参数（默认传递的是json格式的数据） <img src="/image/vue/04/29.png"><img src="/image/vue/04/30.png">对应的服务器端的路由设置</li></ul><p><code>app.post(&#39;/axios&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;axios post 传递参数&#39; + req.body.uname + &#39;---&#39; + req.body.age)</code><br><code>})</code></p><ul><li>通过URLSearchParams传递参数（application/x-www-form-urlencoded）<img src="/image/vue/04/31.png"><img src="/image/vue/04/32.png">对应的服务器端的路由设置</li></ul><p><code>app.post(&#39;/axios&#39;, (req, res) =&gt; {</code><br>  <code>res.send(&#39;axios post 传递参数&#39; + req.body.uname + &#39;---&#39; + req.body.age)</code><br><code>})</code></p><p><strong>4.PUT传递参数</strong></p><ul><li>参数传递方式与POST类似<img src="/image/vue/04/33.png"><img src="/image/vue/04/34.png"></li></ul><p>对应的服务器端的路由设置</p><p><code>app.put(&#39;/axios/:id&#39;, (req, res) =&gt; {</code><br> <code>res.send(&#39;axios put 传递参数&#39; + req.params.id + &#39;---&#39; + req.body.uname + &#39;---&#39; + req.body.pwd)</code><br><code>})</code></p><hr><p><strong>axios的响应结果</strong></p><ul><li>data：实际响应回来的数据</li><li>headers：响应头信息</li><li>status：响应状态码</li><li>statusText：响应状态信息<img src="/image/vue/04/35.png"></li></ul><p>对应的服务器端的路由设置</p><p><code>app.get(&#39;/axios-json&#39;, (req, res) =&gt; {</code><br>  <code>res.json({</code><br>   <code>uname: &#39;lisi&#39;,</code><br>   <code>age: 12</code><br> <code>});</code><br><code>})</code></p><p><strong>axios的全局配置</strong></p><ul><li>axios.defaults.timeout = 3000; //超时时间</li><li>axios.defaults.baseURL = ‘<a href="http://localhost:3000/app&#39;" target="_blank" rel="noopener">http://localhost:3000/app&#39;</a>; //默认地址</li><li>axios.defaults.headers[‘mytoken’] = ‘aqwerqwqw’ //设置请求头<img src="/image/vue/04/36.png"></li></ul><p>对应的服务器端的路由设置</p><p><code>app.get(&#39;/axios-json&#39;, (req, res) =&gt; {</code><br>  <code>res.json({</code><br>   <code>uname: &#39;lisi&#39;,</code><br>   <code>age: 12</code><br> <code>});</code><br><code>})</code></p><hr><p><strong>axios请求拦截器</strong><br><img src="/image/vue/04/37.png"></p><img src="/image/vue/04/38.png"><p><strong>axios响应拦截器</strong><br><img src="/image/vue/04/39.png"></p><img src="/image/vue/04/40.png"><ul><li>相当于进行下图的代码处理，两个打印的数据都是一样的。<img src="/image/vue/04/41.png"></li></ul><hr><p><strong>async/await 的基本用法</strong></p><ul><li>async/await是ES7引入的新语法，可以更加方便的进行异步操作</li><li>async关键字用于函数上 (async函数的返回值是Promise实例对象)</li><li>await关键字用于async函数当中 (await可以得到异步的结果)</li></ul><img src="/image/vue/04/42.png"><img src="/image/vue/04/43.png"><p><strong>async/await 处理多个异步请求</strong><br><img src="/image/vue/04/44.png"><br><img src="/image/vue/04/45.png"></p></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p><p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px"></p></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div style=&quot;background-color: rgb(255, 251, 240);&quot;&gt;
-&lt;img src=&quot;https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3647099666,2758135680&amp;fm=26&amp;gp=0.jpg&quot; style=&quot;width: 162px ;height: 130px;margin-left: 0;
-margin-top: 15px;float: left;&quot;&gt;
-&lt;div style=&quot;float: left;margin:20px 15px;width: 500px;height: 137px&quot;&gt;
-&lt;h4 style=&quot;padding: 0;margin: 0;&quot;&gt;VUE常用特性学习记录&lt;/h4&gt;
-&lt;div style=&quot;padding: 0;margin: 0;font-size: 12px;line-height: 30px&quot;&gt;
-这里不写笔记，只写VUE有哪些知识点
-&lt;br&gt;
 &lt;/div&gt;
 
 

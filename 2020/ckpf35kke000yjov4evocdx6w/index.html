@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,旅行,思考,代码,博客" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    HTML总复习 |  
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="前端小菜鸟" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-HTML总复习"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  HTML总复习
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/ckpf35kke000yjov4evocdx6w/" class="article-date">
+  <time datetime="2020-12-22T08:14:08.000Z" itemprop="datePublished">2020-12-22</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML%E5%A4%8D%E4%B9%A0/">HTML复习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.6k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">10 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <div style="background-color: #CCFF99;">
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4112020308,3805275000&fm=26&gp=0.jpg" style="width: 162px ;height: 130px;margin-left: 0;
+margin-top: 15px;float: left;">
+<div style="float: left;margin:20px 15px;width: 500px;height: 137px">
+<h4 style="padding: 0;margin: 0;">HTML总复习</h4>
+<div style="padding: 0;margin: 0;font-size: 12px;line-height: 30px">
+HTML总复习
+</div>
+
+
+</div>
+
+
+<a id="more"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>动态网页和静态网页</strong>
+
+</div>
+
+<ol>
+<li>静态网页：HTML代码和内容书写完毕之后，页面的内容和显示效果基本就不会变化了。</li>
+<li>动态网页：页面代码虽然没有变化，但是显示的内容却是可以随着时间、环境或者数据库操作的结果而发生改变的。</li>
+</ol>
+<p><strong>注意： 不要将动态网页和页面内容是否有动画效果混为一谈，比如网页中幻灯片效果，文字滚动效果。<br>如果内容本身没有发生变化，那么也属于静态网页。</strong></p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>五大主流浏览器</strong>
+
+</div>
+
+<ol>
+<li>Internet Explorer (IE)</li>
+<li>FireFox(火狐)</li>
+<li>Chrome(谷歌)</li>
+<li>Opera(欧朋)</li>
+<li>Safari(苹果)</p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML结构的样式</strong>
+
+</div>
+<img src="/image/htmlSummary/01.png" style="width: 1360">
+<img src="/image/htmlSummary/02.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>基本标签</strong>
+
+</div>
+
+<ol>
+<li>div标签 <code>&lt;div&gt;&lt;/div&gt;</code></li>
+<li>hx(x = 1-6)标题标签 <code>&lt;h1&gt;&lt;/h1&gt;</code></li>
+<li>p段落标签 <code>&lt;p&gt;&lt;/p&gt;</code></li>
+<li>br换行标签 <code>&lt;br&gt;</code></li>
+<li>hr水平线标签,起修饰作用 <code>&lt;hr color=&quot;red&quot; width=&quot;50%&quot; height=&quot;2px&quot; align=&quot;center&quot;&gt;</code></li>
+<li>a标签实现链接跳转<code>&lt;a href=&quot;&quot; title=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;</code></li>
+<li>img加载外部图片<code>&lt;img src=&quot;&quot; alt=&quot;&quot; title=&quot;&quot;&gt;</code></li>
+<li>span作用和div一样，用来布局，div是块级元素，span是行内元素（内联）</li>
+<li>ul/ol列表标签，前者是无序的，后者是有序的。<code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code> <code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code></p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>标签属性</strong>
+
+</div>
+
+<ol>
+<li>通常由属性名=”属性值”组成</li>
+<li>起附加信息作用。</li>
+<li>不是所有的标签都有属性，比如 br 标签<br><code>&lt;p title=&quot;段落&quot; class=&quot;content&quot; id=&quot;content&quot;&gt;&lt;/p&gt;</code></p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文本格式化标签</strong>
+
+</div>
+
+<ol>
+<li>b和strong:都有加粗的作用，都是行级标签，但是strong除了加粗还有强调作用。</li>
+<li>i和em标签:使文字倾斜，都是行级标签，em具有<code>强调作用</code>，如果只是简单的倾斜效果用i标签就好了，比如添加图标等。</li>
+<li>pre预格式化文本，保留换行和空格及宽度，文字的字号会小一号（块级标签）<code>&lt;pre&gt;&lt;/pre&gt;</code></li>
+<li>small和big:分别让文字缩小一号，或者放大一号（行级标签）。big在HTML5中淘汰了，但是并没有删除，在开发中尽量不使用 <code>&lt;small&gt;&lt;/small&gt;</code>  <code>&lt;big&gt;&lt;/big&gt;</code></li>
+<li>sub和sup:设置文本为下标和上标，用来调整文本正常现实的基线。且文字会自动小一号<br><code>&lt;sub&gt;&lt;/sub&gt;</code>  <code>&lt;sup&gt;&lt;/sup&gt;</code><br><code>注：强调主要用于SEO时，便于提升网站优化的排名</code></p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>单双标签</strong>
+
+</div>
+
+<ul>
+<li><p>单标签(单标签后面加反斜杠，养成良好的习惯)<br>换行符: <code>&lt;br/&gt;</code><br>水平线: <code>&lt;hr/&gt;</code><br>图片标签: <code>&lt;img src=&quot;&quot;/&gt;</code><br>文本标签: <code>&lt;input type=&quot;&quot; name=&quot;&quot;/&gt;</code><br>link标签: <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&quot;/&gt;</code><br>元信息标签: <code>&lt;meta charset=&quot;utf-8&quot;/&gt;</code></p>
+</li>
+<li><p>双标签<br><code>&lt;div&gt;&lt;/div&gt;</code><br><code>&lt;span&gt;&lt;/span&gt;</code><br><code>&lt;h1&gt;&lt;/h1&gt;</code><br><code>&lt;table&gt;&lt;/table&gt;</code><br><code>&lt;title&gt;&lt;/title&gt;</code><br><code>&lt;head&gt;&lt;/head&gt;</code></p>
+</li>
+</ul>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML实体转义</strong>
+
+</div>
+在HTML中，内容编辑时，如果是通过空格键编辑的多个空格，网页只会显示成一个，而小于号（<）和大于号(>)，网站则会认为是标签而无法直接显示在页面中。而这些都可以通过实体字符来解决。
+
+<table>
+<thead>
+<tr>
+<th align="left">实体字符</th>
+<th align="left">编译后字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&amp;lt;</code></td>
+<td align="left">小于号(&lt;)</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;gt;</code></td>
+<td align="left">大于号(&gt;)</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;amp;</code></td>
+<td align="left">与号(&amp;)</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;nbsp;</code></td>
+<td align="left">空格</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;copy;</code></td>
+<td align="left">版权符号</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;times;</code></td>
+<td align="left">乘号(x)</td>
+</tr>
+<tr>
+<td align="left"><code>&amp;divide;</code></td>
+<td align="left">除号</td>
+</tr>
+</tbody></table>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>块级元素和行内元素</strong>
+
+</div>
+
+<p>&lt;一&gt;块级元素（相当于执行了display:block;操作）<br>1）独占一行<br>2）宽度和高度是可控的，如果没有设置其宽度，将默认铺满整行<br>3）其内可以包括块级和行级元素<br><code>&lt;p style=&quot;width: 300px; height: 300px;display: line &quot;&gt;块级标签转行级标签&lt;/p&gt;</code></p>
+<p>&lt;一&gt;行级元素（相当于执行了display:line;操作）<br>1）不会独占一行，与相邻的行级元素占同一行，知道行占满，会自动掉到下一行<br>2）宽度和高度是不可控的<br>3）其内可以包括行级元素</p>
+<p><code>&lt;span style=&quot;width: 300px; height: 300px;display: block &quot;&gt;行级标签转块级标签&lt;/span&gt;</code></p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>W3C标准</strong>
+
+</div>
+
+<p>W3C又称万网联盟</p>
+<p>W3C标准有结构标准、表现标准、形为标准三部分组成。</p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>标签嵌套规则</strong>
+
+</div>
+
+<ol>
+<li>块级元素可以包含内联元素或者某些块级元素，但是内联元素却不能包含块级元素，它只能包含内联元素。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br>&lt;div&gt;&lt;h1&gt;&lt;&#x2F;h1&gt;&lt;p&gt;&lt;&#x2F;p&gt;&lt;&#x2F;div&gt;------对<br>&lt;a href&#x3D;&quot;#&quot;&gt; &lt;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;---对<br> &lt;span&gt; &lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;span&gt;-------错<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>块级元素不能放在<code>&lt;p&gt;</code>里面</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br>&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;&#x2F;li&gt;&lt;&#x2F;ol&gt;&lt;&#x2F;p&gt;--错<br>&lt;p&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;---------错<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>有几个特殊的块级元素只能包含内嵌元素，不能再包含块级元素，这几个是：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain"> <br>h1 h2 h3 h4 h5 h6 p dt<br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>块级元素和块级元素并列、内嵌元素与内嵌元素并列(XHTMLStrict中这样使用，HTML5中可以随便写的)</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br>&lt;div&gt;&lt;h1&gt;&lt;&#x2F;h1&gt;&lt;p&gt;&lt;&#x2F;p&gt;&lt;&#x2F;div&gt;----------------对<br>&lt;div&gt; &lt;a href&#x3D;&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;--对<br>&lt;div&gt;&lt;h1&gt;&lt;&#x2F;h1&gt;&lt;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;----------错<br></code></pre></td></tr></table></figure>
+
+<p><strong>第四点需要注意:<br>XHTMLStrict是一个很严格的标准，现在不是很常用，甚至可以认为已经被弃用了。<br>目前主流的HTML5的规则是：随便写。</strong></p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>HTML语义化标签</strong>
+
+</div>
+
+<img src="/image/htmlSummary/03.png" style="width: 1360">
+<img src="/image/htmlSummary/04.png" style="width: 1360">
+<img src="/image/htmlSummary/05.png" style="width: 1360">
+<img src="/image/htmlSummary/06.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>文件命名规范</strong>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="left">页面</th>
+<th align="left">命名规范</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">首页</td>
+<td align="left">index.html</td>
+</tr>
+<tr>
+<td align="left">公司介绍</td>
+<td align="left">about.html</td>
+</tr>
+<tr>
+<td align="left">新闻列表</td>
+<td align="left">news.html</td>
+</tr>
+<tr>
+<td align="left">新闻详情页</td>
+<td align="left">news_details.html</td>
+</tr>
+<tr>
+<td align="left">产品列表</td>
+<td align="left">product.html</td>
+</tr>
+<tr>
+<td align="left">产品详情页</td>
+<td align="left">pro_details.html</td>
+</tr>
+<tr>
+<td align="left">联系我们</td>
+<td align="left">contact.html</td>
+</tr>
+</tbody></table>
+</p>
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>标签通用属性</strong>
+
+</div>
+
+<ol>
+<li><p>标签是由标签名、标签属性、和文本内容三部分组成（单标签没有文本内容）</p>
+</li>
+<li><p>标签属性是对标签的一种描述方式</p>
+</li>
+<li><p>标签属性分为通用属性、自有属性和自定义属性</p>
+</li>
+<li><p>通用属性:所有标签都具有的属性</p>
+<pre style="color: skyblue">
+    通用属性有：
+       id：用来给标签取一个唯一的名称。id名称在一个网页必须是唯一的。
+       class：用来给标签取一个类名。
+       style：用来设置该标签的行内样式。
+       title: 当鼠标移到该标签，所显示的提示内容。
+</pre>
+</li>
+<li><p>自定义属性标签属性：通常用来传值或用于图片懒加载等方面<br>格式： data-*<br><code>&lt;img data-src=&quot;图片名&quot; alt=&quot;提示文本&quot;&gt;</code><br><code>&lt;p data-id=&quot;goodsid&quot;&gt;....&lt;/p&gt;</code></p>
+</li>
+</ol>
+<hr>
+<div style="text-align: center; color: red">
+    <strong>table标签</strong>
+
+</div>
+
+<ol start="6">
+<li>table主要用于呈现格式化数据。表格是由行和列组成<br>格式：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br>&lt;table&gt;<br>	&lt;tr&gt;<br>&lt;th&gt;&lt;&#x2F;th&gt;  &#x2F;&#x2F; th:表头，主要用于对下面的内容起说明作用，th的内容会自动加粗和居中显示<br>		&lt;td&gt;&lt;&#x2F;td&gt;<br>		....<br>	&lt;&#x2F;tr&gt;<br>	.....<br>&lt;&#x2F;table&gt;<br></code></pre></td></tr></table></figure>
+<ol start="7">
+<li>table属性<br>border：表格边框，默认单位是像素<br>width：表格宽度，默认单位是像素<br>align：表格的对齐方式（left(默认)/center/right）<br>cellpadding:单元格文本与边框的距离<br>cellspacing:单元格边框间距</li>
+</ol>
+</li>
+</ol>
+<img src="/image/htmlSummary/07.png" style="width: 1360">
+
+<ol start="8">
+<li>表格的rowspan和colspan合并单元格属性的使用</li>
+</ol>
+<p>rowspan：跨行合并（row：一行）<br>rowspan=”2” 合并单元格的个数<br>align:水平方向移动<br>valign:垂直方向移动 top/middle/bottom<br><img src="/image/htmlSummary/08.png" style="width: 1360"></p>
+<p>  colspan：跨列合并<br>  colspan=”2” 合并单元格的个数<br>  valign:垂直方向移动 top/middle/bottom</p>
+<img src="/image/htmlSummary/09.png" style="width: 1360">
+
+<ol start="9">
+<li><p>完整表格组成：caption（标题）、thead（表头）、tbody（标体）和tfoot（表尾）四部分组成</p>
+</li>
+<li><p>form表单标签是所有标签最核心标签之一。它是用来实现前后端交互的一个重要标签。<br>常用属性：<br>name：表单名称<br>action：表单数据提交的地方（通常是一个后台文件名(.jsp/.php)，或者网址）如果是#表示当前文件下。<br>method：前端提交数据到后端的方法，主要有：get和post，默认时get。</p>
+</p>
+
+</li>
+</ol>
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>input标签</strong>
+
+</div>
+
+<p>1）input类：主用于来输入，选择或发出指令。<br>type：text/password/radio/checkbox/file/button/image/submit/reset</p>
+<p>a:text:单行文本输入框 type=”text”可以不写，默认值<br>属性： placeholder(提示)/name(命名)/minlength和maxlength(最少/多输入的字符个数)<br>/disable(失效)/readonly(只读)/value(默认值)/pattern(正则匹配)</p>
+<p>b:password:密码框  属性与text一样</p>
+<p>c:radio:单选按钮，通常是两项以上，多选一。常用属性有：name（必须要有）/value/checked(选中)<br>/disable(失效)/readonly(只读)</p>
+<p>name的值要相同才可以多选一<br><img src="/image/htmlSummary/10.png" style="width: 1360"></p>
+<p>d:checkbox:复选框，可以用来选择0选、1项或者多项。<br>常用属性有：name（必须要有/disable(失效)/readonly(只读)</p>
+<p>name的值要相同才可以多选多<br><img src="/image/htmlSummary/11.png" style="width: 1360"></p>
+<p>e:file:文件上传按钮<br><img src="/image/htmlSummary/12.png" style="width: 1360"></p>
+<p>f:button:普通按钮，通常用它去调用脚本代码。<br>常用属性有：value（按钮的标题）/disable（失效）<br><img src="/image/htmlSummary/13.png" style="width: 1360"></p>
+<p>g:image:图片按钮，用法与button一样。有一个特殊属性：src（用来加载提示图片，用它替换了value）<br>它有提交功能，与submit功能一样。<br><img src="/image/htmlSummary/14.png" style="width: 1360"></p>
+<p>h:submit:提交按钮，用来将表单数据提交到后台。<br>常用属性有：value(按钮的标题)/disable(失效)<br><img src="/image/htmlSummary/15.png" style="width: 1360"></p>
+<p>j:reset:重置按钮，将表单所有组件输入的内容全部清空，还原为初始状态。<br>常用属性有：value（按钮的标题）/disable(失效)<br><img src="/image/htmlSummary/16.png" style="width: 1360"></p>
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>textarea类</strong>
+</div>
+文本域（也可以叫多行文本框），主要用于输入大批量的内容
+常用属性有：name/id/cols(列数)/rows(行数)/placeholder/minlength/maxlength/required(必须输入)/value
+<img src="/image/htmlSummary/17.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>select类</strong>
+</div>
+
+<p>下拉列表框，默认为用于单项选择，用于option呈现每一个选项<br>mltiple属性：表示可以多选，这时的下拉列表框变成了列表框<br>size：最多显示的行数</p>
+<img src="/image/htmlSummary/18.png" style="width: 1360">
+
+</p>
+
+<hr>
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+<div style="text-align: center; color: red">
+    <strong>button类</strong>
+</div>
+普通按钮，具有提交功能。可以单独使用，不写在form元素中；如果写在form中，有提交功能。
+
+<img src="/image/htmlSummary/19.png" style="width: 1360">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+<p style="text-indent: 2em;color: rgb(93, 93, 93);font-size: 13px">
+
+</p>
+
+
+</div> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wujun1234567.github.io/2020/ckpf35kke000yjov4evocdx6w/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML%E5%AD%A6%E4%B9%A0/" rel="tag">HTML学习</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/ckpf35kjj000cjov46nrq79be/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            CSS总复习
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/ckpf35kju000mjov47sk16dyq/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">ES6语法学习</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "jOcME2E1SvPfS2BYjQKvUvjl-gzGzoHsz",
+    app_key: "F5Em7DAEPn0mn3H8B6N01sdu",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> 越前龙马
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/favicon.ico" alt="前端小菜鸟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://wanfengguai.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>不需要你的臭钱~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=30064263&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>
